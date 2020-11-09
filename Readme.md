@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Смирнов](https://up.htmlacademy.ru/adaptive/21/user/939261).
-* Наставник: `Неизвестно`.
+* Наставник: Юрий Белобородов.
 
 ---
 
