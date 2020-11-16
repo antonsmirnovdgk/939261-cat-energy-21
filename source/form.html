@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="container">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__img" src="img/logo-mobile.svg" alt="Cat Energy">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" name="button" aria-label="Открыть меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a href="#">главная</a></li>
+            <li class="main-nav__item"><a href="#">каталог продукции</a></li>
+            <li class="main-nav__item"><a href="#">подбор программы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="form">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="form__main" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form-name">
+            <ul class="form-name__list" role="none">
+              <li class="form-name__item">
+                <label for="field-name">Имя:<sup>*</sup></label>
+                <input id="field-name" type="text" value="Барсик" name="name">
+              </li>
+              <li class="form-name_item">
+                <label for="field-weight">Вес (КГ):<sup>*</sup></label>
+                <input id="field-weight" type="text" value="7" name="weight">
+              </li>
+              <li class="form-name__item">
+                <label for="field-age">Возвраст (ЛЕТ):</label>
+                <input id="field-age" type="text" value="7" name="age">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-programm">
+            <ul class="form-programm__list">
+              <li class="form-programm__item">
+                <input id="low-weight" type="radio" name="low-weight" checked>
+                <label for="low-weight">Похудение</label>
+              </li>
+              <li class="form-programm__item">
+                <input id="up-weight" type="radio" name="up-weight">
+                <label for="up-weight">Набор массы</label>
+              </li>
+              <li class="form-programm__item">
+                <input id="dont-know" type="radio" name="dont-know">
+                <label for="dont-know">Не знаю(нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-contact">
+            <legend class="form-title">Контактные данные (владельца кота)</legend>
+            <ul class="form-contact__list">
+              <li class="form-contact__item">
+                <label for="field-email">email:<sup>*</sup></label>
+                <input id="field-email" type="text" name="email" value="kuklachev@gmail.com">
+              </li>
+              <li class="form-contact__item">
+                <label for="field-phone">телефон:<sup>*</sup></label>
+                <input type="field-phone" name="phone" value="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-comment">
+            <label class="form-title" for="field-comment">Комментарий</label>
+            <textarea id="field-comment" name="comment" rows="8" cols="80">Расскажите обо всех повАдках кота</textarea>
+          </fieldset>
+          <fieldset class="form-extra">
+            <legend class="form-title">Дополнительно</legend>
+            <ul class="form-extra__list">
+              <li class="form-extra__item">
+                <input id="extra-one" type="checkbox" name="sugar" checked>
+                <label for="extra-one">сахарозаменитель</label>
+              </li>
+              <li class="form-extra__item">
+                <input id="extra-two" type="checkbox" name="water">
+                <label for="extra-two">питьевая вода</label>
+              </li>
+              <li class="form-extra__item">
+                <input id="extra-three" type="checkbox" name="milk">
+                <label for="extra-three">молоко</label>
+              </li>
+              <li class="form-extra__item">
+                <input id="extra-four" type="checkbox" name="vitamins">
+                <label for="extra-four">витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="button" name="button">отправить заявку</button>
+          <small class="form__legend"><sup>*</sup> — Обязательные поля</small>
+        </form>
+        <section class="map">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="container">
+            <h3 class="map__title">приглашаем к сотрудничеству дилеров!</h3>
+            <address class="map__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+            <img class="map__img" src="https://via.placeholder.com/150x150" alt="Карта">
+        </section>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <a  class="page-footer__link" href="#">
+          <img class="page-footer__logo" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+        </a>
+        <ul class="page-footer__social">
+          <li class="page-footer__item"><a href="#"><img src="https://via.placeholder.com/150x150" alt="vk" aria-label="vk"></a></li>
+          <li class="page-footer__item"><a href="#"><img src="https://via.placeholder.com/150x150" alt="instagram" aria-label="instagram"></a></li>
+          <li class="page-footer__item"><a href="#"><img src="https://via.placeholder.com/150x150" alt="facebook" aria-label="facebook"></a></li>
+        </ul>
+        <div class="page-footer__icon">
+          <p class="page-footer__copy">HTML Academy</p>
+          <a href="#" aria-label="html academy лого"><img src="https://via.placeholder.com/150x150" alt="Лого HTML Academy"></a></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
