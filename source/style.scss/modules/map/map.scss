@@ -1,0 +1,22 @@
+.map {
+  background-image: url(../img/map/location.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.map__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.map__addres {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
