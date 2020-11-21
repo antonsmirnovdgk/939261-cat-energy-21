@@ -1,5 +1,5 @@
 .map {
-  background-image: url(../img/map/location.png);
+  background-image: url("../img/map/location.png");
   background-position: center center;
   background-size: cover;
 }
@@ -13,7 +13,7 @@
 }
 
 .map__addres {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
