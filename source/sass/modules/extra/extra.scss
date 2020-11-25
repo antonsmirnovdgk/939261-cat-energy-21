@@ -1,0 +1,32 @@
+.extra__list {
+  list-style: none;
+}
+
+.extra__title {
+  margin-bottom: 35px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $blackcolor;
+}
+
+.extra__title-item {
+  margin-bottom: 13px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra__item {
+  margin-bottom: 19px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.extra__item:last-child {
+  margin-bottom: 0;
+}
