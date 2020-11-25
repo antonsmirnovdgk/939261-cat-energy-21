@@ -1,0 +1,26 @@
+.catalog__list {
+  list-style: none;
+}
+
+.catalog-title {
+  position: relative;
+  margin-bottom: 32px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $blackcolor;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #ebebeb;
+  }
+}
+
+.catalog__item {
+  margin-bottom: 25px;
+}
