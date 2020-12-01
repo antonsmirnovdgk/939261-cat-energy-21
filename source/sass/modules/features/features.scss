@@ -2,6 +2,15 @@
   margin-bottom: 27px;
 }
 
+.features__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .features__item {
   position: relative;
   padding-top: 21px;
