@@ -3,22 +3,50 @@
   margin-bottom: 22px;
   text-align: center;
   color: $white;
-  background-image: url("../img/promo/cat.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+  min-height: 480px;
 
-  &::before {
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(104, 183, 56, 0.85);
+  @media (min-width: $tablet-width) {
+    min-height: 873px;
+    color: $blackcolor;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 582px;
+  }
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  // background-image: url("../img/promo/cat.png");
+  // background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
   }
 }
 
 .promo__title {
+  position: relative;
   font-size: 36px;
   line-height: 36px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 302px;
+    width: 100%;
+    background-image: url("../img/promo/cat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+  }
 }
 
 .promo__slogan {
