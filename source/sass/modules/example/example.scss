@@ -9,12 +9,19 @@
   font-weight: 400;
 }
 
-.example__wrapper {
+.example__container {
   display: flex;
   flex-direction: column;
+  min-height: 705px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    min-height: 1081px;
+  }
+
+  @media (min-width: $tablet-width) {
     flex-direction: row;
+    min-height: 656px;
   }
 }
 

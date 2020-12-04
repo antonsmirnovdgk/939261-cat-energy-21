@@ -10,8 +10,12 @@
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
-    padding-left: 110px;
-    padding-right: 110px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

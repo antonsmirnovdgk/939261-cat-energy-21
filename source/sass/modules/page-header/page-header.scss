@@ -1,4 +1,5 @@
-.page-header__wrapper {
+.page-header__container {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -6,4 +7,8 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.page-header__logo {
+  min-height: 66px;
 }

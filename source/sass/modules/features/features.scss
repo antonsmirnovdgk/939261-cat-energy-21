@@ -13,12 +13,21 @@
 
 .features__item {
   position: relative;
+  min-height: 266px;
   padding-top: 21px;
   padding-right: 33px;
   padding-bottom: 18px;
   padding-left: 20px;
   margin-bottom: 20px;
   background-color: $greycolor;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 374px;
+  }
 }
 
 .features__title {
