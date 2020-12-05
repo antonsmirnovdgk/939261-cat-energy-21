@@ -40,21 +40,12 @@
   }
 }
 
-.form-name,
-.form-programm {
-  max-width: 568px;
-}
-
-.form-name,
-.form-programm,
-.form-contact,
-.form-comment,
-.form-extra {
+.fieldset {
   position: relative;
   display: flex;
   flex-direction: column;
   border: none;
-  margin-bottom: 22.22px;
+  margin-bottom: 22px;
 
   &::after {
     content: "";
@@ -66,10 +57,14 @@
   }
 }
 
-.form-name__list,
-.form-programm__list,
-.form-contact__list,
-.form-extra__list {
+.list--desktop {
+  @media (min-width: $desktop) {
+    display: flex;
+    max-width: 50%;
+  }
+}
+
+.list {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -79,21 +74,19 @@
   }
 }
 
-.form-name__item,
-.form-contact__item,
-.form-programm__item {
+.list__item {
   display: flex;
   margin-bottom: 13px;
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 13.2px 15.2px 13.8px 15.2px;
+  padding: 13px 15px 13px 15px;
   margin-left: 14px;
   border: 1px solid #e7e7e7;
 }
 
-label {
+.label {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -114,4 +107,8 @@ label {
       width: 50%;
     }
   }
+}
+
+.textarea {
+  width: 100%;
 }

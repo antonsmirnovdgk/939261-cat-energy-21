@@ -34,73 +34,73 @@
           <h1 class="form__title">Подбор программы</h1>
           <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="form__main" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form-name">
-              <ul class="form-name__list" role="none">
-                <li class="form-name__item">
-                  <label for="field-name">Имя:<sup>*</sup></label>
+            <fieldset class="form-name fieldset">
+              <ul class="form-name__list list list--desktop" role="none">
+                <li class="form-name__item list__item">
+                  <label class="label" for="field-name">Имя:<sup>*</sup></label>
                   <input id="field-name" type="text" value="Барсик" name="name">
                 </li>
-                <li class="form-name__item">
-                  <label for="field-weight">Вес (КГ):<sup>*</sup></label>
+                <li class="form-name__item list__item">
+                  <label class="label" for="field-weight">Вес (КГ):<sup>*</sup></label>
                   <input id="field-weight" type="text" value="7" name="weight">
                 </li>
-                <li class="form-name__item">
-                  <label for="field-age">Возвраст (ЛЕТ):</label>
+                <li class="form-name__item list__item">
+                  <label class="label" for="field-age">Возвраст (ЛЕТ):</label>
                   <input id="field-age" type="text" value="7" name="age">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-programm">
-              <ul class="form-programm__list">
-                <li class="form-programm__item">
+            <fieldset class="form-programm fieldset">
+              <ul class="form-programm__list list list--desktop">
+                <li class="form-programm__item list__item">
                   <input id="low-weight" type="radio" name="low-weight" checked>
-                  <label for="low-weight">Похудение</label>
+                  <label class="label" for="low-weight">Похудение</label>
                 </li>
-                <li class="form-programm__item">
+                <li class="form-programm__item list__item">
                   <input id="up-weight" type="radio" name="up-weight">
-                  <label for="up-weight">Набор массы</label>
+                  <label class="label" for="up-weight">Набор массы</label>
                 </li>
-                <li class="form-programm__item">
+                <li class="form-programm__item list__item">
                   <input id="dont-know" type="radio" name="dont-know">
-                  <label for="dont-know">Не знаю(нужен ваш совет)</label>
+                  <label class="label" for="dont-know">Не знаю(нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-contact">
+            <fieldset class="form-contact fieldset">
               <legend class="form-title">Контактные данные (владельца кота)</legend>
-              <ul class="form-contact__list">
-                <li class="form-contact__item">
-                  <label for="field-email">email:<sup>*</sup></label>
+              <ul class="form-contact__list list">
+                <li class="form-contact__item list__item">
+                  <label class="label" for="field-email">email:<sup>*</sup></label>
                   <input id="field-email" type="text" name="email" value="kuklachev@gmail.com">
                 </li>
-                <li class="form-contact__item">
-                  <label for="field-phone">телефон:<sup>*</sup></label>
+                <li class="form-contact__item list__item">
+                  <label class="label" for="field-phone">телефон:<sup>*</sup></label>
                   <input id="field-phone" type="text" name="phone" value="8 (960) 900-60-90">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-comment">
+            <fieldset class="form-comment fieldset">
               <legend class="form-title" for="field-comment">Комментарий</legend>
-              <textarea id="field-comment" name="comment" rows="8" cols="80">Расскажите обо всех повАдках кота</textarea>
+              <textarea class="textarea" id="field-comment" name="comment" rows="8" cols="80">Расскажите обо всех повадках кота</textarea>
             </fieldset>
-            <fieldset class="form-extra">
+            <fieldset class="form-extra fieldset">
               <legend class="form-title">Дополнительно</legend>
-              <ul class="form-extra__list">
-                <li class="form-extra__item">
+              <ul class="form-extra__list list">
+                <li class="form-extra__item list__item">
                   <input id="extra-one" type="checkbox" name="sugar" checked>
-                  <label for="extra-one">сахарозаменитель</label>
+                  <label class="label" for="extra-one">сахарозаменитель</label>
                 </li>
-                <li class="form-extra__item">
+                <li class="form-extra__item list__item">
                   <input id="extra-two" type="checkbox" name="water">
-                  <label for="extra-two">питьевая вода</label>
+                  <label class="label" for="extra-two">питьевая вода</label>
                 </li>
-                <li class="form-extra__item">
+                <li class="form-extra__item list__item">
                   <input id="extra-three" type="checkbox" name="milk">
-                  <label for="extra-three">молоко</label>
+                  <label class="label" for="extra-three">молоко</label>
                 </li>
-                <li class="form-extra__item">
+                <li class="form-extra__item list__item">
                   <input id="extra-four" type="checkbox" name="vitamins">
-                  <label for="extra-four">витамины</label>
+                  <label class="label" for="extra-four">витамины</label>
                 </li>
               </ul>
             </fieldset>
