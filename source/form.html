@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__container">
         <a class="page-header__logo" href="#">
           <img class="page-header__img" src="img/logo-mobile.svg" alt="Cat Energy">
         </a>
@@ -74,12 +75,12 @@
                 </li>
                 <li class="form-contact__item">
                   <label for="field-phone">телефон:<sup>*</sup></label>
-                  <input type="field-phone" name="phone" value="8 (960) 900-60-90">
+                  <input id="field-phone" type="text" name="phone" value="8 (960) 900-60-90">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-comment">
-              <label class="form-title" for="field-comment">Комментарий</label>
+              <legend class="form-title" for="field-comment">Комментарий</legend>
               <textarea id="field-comment" name="comment" rows="8" cols="80">Расскажите обо всех повАдках кота</textarea>
             </fieldset>
             <fieldset class="form-extra">
@@ -103,7 +104,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="button" name="button">отправить заявку</button>
+            <button class="button button--form" type="submit" name="button">отправить заявку</button>
             <small class="form__legend"><sup>*</sup> — Обязательные поля</small>
           </form>
         </div>
@@ -118,7 +119,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
         <a  class="page-footer__link" href="#">
           <svg class="page-footer__logo" width="128" height="24" viewBox="0 0 128 24" fill="none">
             <g clip-path="url(#clip0)">
