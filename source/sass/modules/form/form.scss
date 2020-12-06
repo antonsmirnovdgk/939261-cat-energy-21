@@ -1,3 +1,9 @@
+.form__main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
 .form__title {
   padding-top: 27px;
   margin-bottom: 37px;
@@ -44,6 +50,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   border: none;
   margin-bottom: 22px;
 
@@ -55,12 +62,19 @@
     background-color: #d9d9d9;
     bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      height: 0;
+    }
+  }
 }
 
-.list--desktop {
-  @media (min-width: $desktop) {
-    display: flex;
-    max-width: 50%;
+.form-programm {
+  @media (min-width: $tablet-width) {
+    padding: 25px 27px;
+    border: 1px solid #e7e7e7;
   }
 }
 
@@ -74,7 +88,20 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .list--desktop {
+    flex-direction: column;
+  }
+}
+
+.fieldset--desktop {
+  @media (min-width: $desktop-width) {
+    max-width: 46%;
+  }
+}
+
 .list__item {
+  position: relative;
   display: flex;
   margin-bottom: 13px;
 }
@@ -93,11 +120,13 @@ input[type="text"] {
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  text-transform: uppercase;
 }
 
 .button {
   width: 100%;
   padding: 7px 0;
+  margin-bottom: 21px;
   background: #68b738;
   border: none;
   text-transform: uppercase;
@@ -107,6 +136,11 @@ input[type="text"] {
       width: 50%;
     }
   }
+}
+
+.form__legend {
+  display: inline-block;
+  text-align: center;
 }
 
 .textarea {

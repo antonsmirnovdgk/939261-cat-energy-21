@@ -12,7 +12,7 @@
         <a class="page-header__logo" href="#">
           <img class="page-header__img" src="img/logo-mobile.svg" alt="Cat Energy">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button" name="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -34,7 +34,7 @@
           <h1 class="form__title">Подбор программы</h1>
           <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="form__main" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form-name fieldset">
+            <fieldset class="form-name fieldset fieldset--desktop">
               <ul class="form-name__list list list--desktop" role="none">
                 <li class="form-name__item list__item">
                   <label class="label" for="field-name">Имя:<sup>*</sup></label>
@@ -50,18 +50,18 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-programm fieldset">
+            <fieldset class="form-programm fieldset fieldset--desktop">
               <ul class="form-programm__list list list--desktop">
                 <li class="form-programm__item list__item">
-                  <input id="low-weight" type="radio" name="low-weight" checked>
+                  <input class="radio" id="low-weight" type="radio" name="low-weight" checked>
                   <label class="label" for="low-weight">Похудение</label>
                 </li>
                 <li class="form-programm__item list__item">
-                  <input id="up-weight" type="radio" name="up-weight">
+                  <input class="radio" id="up-weight" type="radio" name="up-weight">
                   <label class="label" for="up-weight">Набор массы</label>
                 </li>
                 <li class="form-programm__item list__item">
-                  <input id="dont-know" type="radio" name="dont-know">
+                  <input class="radio" id="dont-know" type="radio" name="dont-know">
                   <label class="label" for="dont-know">Не знаю(нужен ваш совет)</label>
                 </li>
               </ul>
@@ -87,19 +87,19 @@
               <legend class="form-title">Дополнительно</legend>
               <ul class="form-extra__list list">
                 <li class="form-extra__item list__item">
-                  <input id="extra-one" type="checkbox" name="sugar" checked>
+                  <input class="checkbox" id="extra-one" type="checkbox" name="sugar" checked>
                   <label class="label" for="extra-one">сахарозаменитель</label>
                 </li>
                 <li class="form-extra__item list__item">
-                  <input id="extra-two" type="checkbox" name="water">
+                  <input class="checkbox" id="extra-two" type="checkbox" name="water">
                   <label class="label" for="extra-two">питьевая вода</label>
                 </li>
                 <li class="form-extra__item list__item">
-                  <input id="extra-three" type="checkbox" name="milk">
+                  <input class="checkbox" id="extra-three" type="checkbox" name="milk">
                   <label class="label" for="extra-three">молоко</label>
                 </li>
                 <li class="form-extra__item list__item">
-                  <input id="extra-four" type="checkbox" name="vitamins">
+                  <input class="checkbox" id="extra-four" type="checkbox" name="vitamins" disabled>
                   <label class="label" for="extra-four">витамины</label>
                 </li>
               </ul>
@@ -108,14 +108,14 @@
             <small class="form__legend"><sup>*</sup> — Обязательные поля</small>
           </form>
         </div>
-        <section class="map">
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="container">
-            <h3 class="map__title">приглашаем к сотрудничеству дилеров!</h3>
-            <address class="map__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          </div>
-            <img class="map__img" src="https://via.placeholder.com/150x150" alt="Карта">
-        </section>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="map__wrapper">
+          <h3 class="map__title">приглашаем к сотрудничеству дилеров!</h3>
+          <address class="map__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+          <img class="map__img" src="" alt="Карта">
       </section>
     </main>
     <footer class="page-footer">

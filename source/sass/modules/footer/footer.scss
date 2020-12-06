@@ -5,19 +5,38 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
+  text-align: center;
   min-height: 236px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    min-height: 146px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 149px;
+    align-items: center;
+    min-height: 150px;
   }
 }
 
+.page-footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95px;
+}
+
 .page-footer__social {
+  display: flex;
+  justify-content: space-between;
+  min-width: 130px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   list-style: none;
+}
+
+.page-footer__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
