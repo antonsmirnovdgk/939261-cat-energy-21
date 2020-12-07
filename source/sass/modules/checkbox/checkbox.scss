@@ -2,7 +2,7 @@
   appearance: none;
 
   & + label {
-    margin-left: 60px;
+    margin-left: 49px;
     margin-bottom: 13px;
   }
 
@@ -13,7 +13,7 @@
     bottom: 5px;
     width: 30px;
     height: 30px;
-    background-image: url(../../svg/checkbox/checkbox.svg);
+    border: 1px solid #bababa;
     cursor: pointer;
   }
 

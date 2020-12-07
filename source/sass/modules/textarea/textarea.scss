@@ -1,43 +1,7 @@
-textarea::-webkit-input-placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-textarea::-moz-placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-textarea:-ms-input-placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-textarea::-ms-input-placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-}
-
+textarea::-webkit-input-placeholder,
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder,
+textarea::-ms-input-placeholder,
 textarea::placeholder {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;

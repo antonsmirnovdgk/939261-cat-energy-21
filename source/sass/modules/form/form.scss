@@ -1,6 +1,7 @@
 .form__main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 32px;
 }
 
@@ -27,6 +28,7 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -80,11 +82,12 @@
 
 .list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -103,6 +106,8 @@
 .list__item {
   position: relative;
   display: flex;
+  align-items: center;
+  width: 100%;
   margin-bottom: 13px;
 }
 
@@ -123,18 +128,19 @@ input[type="text"] {
   text-transform: uppercase;
 }
 
-.button {
-  width: 100%;
-  padding: 7px 0;
-  margin-bottom: 21px;
-  background: #68b738;
-  border: none;
-  text-transform: uppercase;
+.form-extra__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
-  &--form {
-    @media (min-width: $tablet-width) {
-      width: 50%;
-    }
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
