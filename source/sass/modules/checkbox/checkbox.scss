@@ -25,7 +25,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid #cdcdcd;
-    background-image: url(../../svg/checkbox/checkbox-checked.svg);
+    background-image: url("../../svg/checkbox/checkbox-checked.svg");
   }
 
   &:disabled + label::before {

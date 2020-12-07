@@ -1,5 +1,6 @@
 .main-nav {
   min-height: 66px;
+
   &--closed .main-nav__toggle::before {
     content: " ";
     position: absolute;
@@ -46,6 +47,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -61,12 +66,6 @@
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
-  }
-}
-
-.main-nav__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 
