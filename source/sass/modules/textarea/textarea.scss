@@ -1,3 +1,10 @@
+.textarea {
+  width: 100%;
+  padding: 10px 19px;
+  border: 1px solid #e7e7e7;
+  text-transform: uppercase;
+}
+
 textarea::-webkit-input-placeholder,
 textarea::-moz-placeholder,
 textarea:-ms-input-placeholder,
@@ -8,6 +15,5 @@ textarea::placeholder {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
   color: #444444;
 }

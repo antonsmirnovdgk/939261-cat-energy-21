@@ -54,7 +54,7 @@
   flex-direction: column;
   width: 100%;
   border: none;
-  margin-bottom: 22px;
+  margin-bottom: 32px;
 
   &::after {
     content: "";
@@ -75,8 +75,14 @@
 
 .form-programm {
   @media (min-width: $tablet-width) {
-    padding: 25px 27px;
+    padding: 25px;
     border: 1px solid #e7e7e7;
+  }
+}
+
+.form-contact__item {
+  @media (min-width: $desktop-width) {
+    max-width: 46%;
   }
 }
 
@@ -147,8 +153,4 @@ input[type="text"] {
 .form__legend {
   display: inline-block;
   text-align: center;
-}
-
-.textarea {
-  width: 100%;
 }
