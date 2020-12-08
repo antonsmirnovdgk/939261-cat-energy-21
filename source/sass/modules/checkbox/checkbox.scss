@@ -1,0 +1,41 @@
+.checkbox {
+  appearance: none;
+
+  & + label {
+    margin-left: 49px;
+    margin-bottom: 13px;
+  }
+
+  & + label::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #bababa;
+    cursor: pointer;
+  }
+
+  &:checked + label::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    background-image: url("../../svg/checkbox/checkbox-checked.svg");
+  }
+
+  &:disabled + label::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+    border: 1px solid #bababa;
+  }
+}

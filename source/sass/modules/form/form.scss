@@ -1,13 +1,156 @@
+.form__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
 .form__title {
+  padding-top: 27px;
+  margin-bottom: 37px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
+.form-title {
+  margin-bottom: 35px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
 
 .form__text {
+  // max-width: 226px;
+  margin-bottom: 39px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $blackcolor;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+  margin-bottom: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+    bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      height: 0;
+    }
+  }
+}
+
+.form-programm {
+  @media (min-width: $tablet-width) {
+    padding: 25px;
+    border: 1px solid #e7e7e7;
+  }
+}
+
+.form-contact__item {
+  @media (min-width: $desktop-width) {
+    max-width: 46%;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list--desktop {
+    flex-direction: column;
+  }
+}
+
+.fieldset--desktop {
+  @media (min-width: $desktop-width) {
+    max-width: 46%;
+  }
+}
+
+.list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 13px 15px 13px 15px;
+  margin-left: 14px;
+  border: 1px solid #e7e7e7;
+}
+
+.label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form-extra__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.form__legend {
+  display: inline-block;
+  text-align: center;
 }

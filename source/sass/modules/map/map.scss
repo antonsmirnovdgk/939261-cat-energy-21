@@ -1,4 +1,5 @@
 .map {
+  position: relative;
   background-image: url("../img/map/location.png");
   min-height: 362px;
   background-position: center center;
@@ -10,10 +11,25 @@
 }
 
 .map__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33px;
   min-height: 114px;
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     min-height: 201px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    max-width: 570px;
+    max-height: 201px;
+    left: 0;
+
+    .container {
+      padding: 0;
+    }
   }
 }
 
