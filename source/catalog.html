@@ -2,22 +2,23 @@
 <html class="page" lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__container">
         <a class="page-header__logo" href="#">
           <img class="page-header__img" src="img/logo-mobile.svg" alt="Cat Energy">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button" name="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="#">каталог продукции</a>
             </li>
             <li class="main-nav__item">
@@ -28,11 +29,11 @@
       </div>
     </header>
     <main class="catalog-main">
-      <h1 class="catalog-title container">Каталог продукции</h1>
+      <h1 class="title catalog-title container">Каталог продукции</h1>
       <section class="catalog">
         <div class="container">
           <ul class="catalog__list">
-            <li class="catalog__item product">
+            <li class="catalog__item catalog__item--container product">
               <h2 class="product__title">Cat Energy PRO 500 г</h2>
               <img class="product__img" src="img/catalog/product-chicken.png" width="68" height="86" alt="Cat Energy PRO 500 г">
               <dl class="product__desc-list">
@@ -45,7 +46,7 @@
               </dl>
               <button class="button button--catalog" type="button" name="button">Заказать</button>
             </li>
-            <li class="catalog__item product">
+            <li class="catalog__item catalog__item--container product">
               <h2 class="product__title">Cat Energy PRO 1000 г</h2>
               <img class="product__img" src="img/catalog/product-chicken-big.png" width="84" height="101" alt="cat energy pro 1000 г">
               <dl class="product__desc-list">
@@ -58,7 +59,7 @@
               </dl>
               <button class="button button--catalog" type="button" name="button">Заказать</button>
             </li>
-            <li class="catalog__item product">
+            <li class="catalog__item catalog__item--container product">
               <h2 class="product__title">Cat Energy PRO 500 г</h2>
               <img class="product__img" src="img/catalog/product-fish.png" width="68" height="78" alt="cat energy pro 500 г">
               <dl class="product__desc-list">
@@ -71,7 +72,7 @@
               </dl>
               <button class="button button--catalog" type="button" name="button">Заказать</button>
             </li>
-            <li class="catalog__item product">
+            <li class="catalog__item catalog__item--container product">
               <h2 class="product__title">Cat Energy PRO 1000 г</h2>
               <img class="product__img" src="img/catalog/product-fish-big.png" width="84" height="101" alt="cat energy pro 1000 г">
               <dl class="product__desc-list">
@@ -84,7 +85,7 @@
               </dl>
               <button class="button button--catalog" type="button" name="button">Заказать</button>
             </li>
-            <li class="catalog__item product">
+            <li class="catalog__item catalog__item--container product">
               <h2 class="product__title">Cat Energy slim 500 г</h2>
               <img class="product__img" src="img/catalog/product-grecha.png" width="68" height="78" alt="cat energy slim 500 г">
               <dl class="product__desc-list">
@@ -95,8 +96,9 @@
                 <dt class="product__desc-item">цена</dt>
                 <dd class="product__desc-item">400 р</dd>
               </dl>
+              <button class="button button--catalog" type="button" name="button">Заказать</button>
             </li>
-            <li class="catalog__item product">
+            <li class="catalog__item catalog__item--container product">
               <h2 class="product__title">Cat Energy slim 1000 г</h2>
               <img class="product__img" src="img/catalog/product-grecha-big.png" width="84" height="100" alt="cat energy slim 1000 г">
               <dl class="product__desc-list">
@@ -109,7 +111,7 @@
               </dl>
               <button class="button button--catalog" type="button" name="button">Заказать</button>
             </li>
-            <li class="catalog__item product">
+            <li class="catalog__item catalog__item--container product">
               <h2 class="product__title">Cat Energy PRO 500 г</h2>
               <img class="product__img" src="img/catalog/product-rice.png" width="72" height="84" alt="Cat Energy PRO 500 г">
               <dl class="product__desc-list">
@@ -122,59 +124,59 @@
               </dl>
               <button class="button button--catalog" type="button" name="button">Заказать</button>
             </li>
-            <li class="catalog__item product-link">
+            <li class="catalog__item catalog__item--container product-link">
               <h2 class="product-link__title">Показать еще 100500 товаров</h2>
               <p class="product-link__text">На самом деле вкусов гораздо больше!</p>
-              <button class="button button--all" type="button" name="button">показать все</button>
+              <button class="button button--catalog" type="button" name="button">показать все</button>
             </li>
           </ul>
         </div>
       </section>
       <section class="extra">
-        <div class="container">
-          <h2 class="extra__title">Дополнительные товары</h2>
+        <div class="container extra-container">
+          <h2 class="extra-title">Дополнительные товары</h2>
           <ul class="extra__list">
             <li class="extra__item">
-              <h3 class="extra__title-item">Сахарозаменитель</h3>
-              <dl class="extra__list">
-                <dt class="extra__item">1 упаковка (100 г)</dt>
-                <dd class="extra__item">200 Р.</dd>
+              <h3 class="extra__item-title">Сахарозаменитель</h3>
+              <dl class="extra__desc">
+                <dt class="extra__desc-item">1 упаковка (100 г)</dt>
+                <dd class="extra__desc-item">200 Р.</dd>
               </dl>
               <button class="button" type="button" name="button">Заказать</button>
             </li>
             <li class="extra__item">
-              <h3 class="extra__title-item">питьевая вода</h3>
-              <dl class="extra__list">
-                <dt class="extra__item">5 литров</dt>
-                <dd class="extra__item">50 Р.</dd>
+              <h3 class="extra__item-title">питьевая вода</h3>
+              <dl class="extra__desc">
+                <dt class="extra__desc-item">5 литров</dt>
+                <dd class="extra__desc-item">50 Р.</dd>
               </dl>
               <button class="button" type="button" name="button">Заказать</button>
             </li>
             <li class="extra__item">
-              <h3 class="extra__title-item">молоко</h3>
-              <dl class="extra__list">
-                <dt class="extra__item">1 литр</dt>
-                <dd class="extra__item">100 Р.</dd>
+              <h3 class="extra__item-title">молоко</h3>
+              <dl class="extra__desc">
+                <dt class="extra__desc-item">1 литр</dt>
+                <dd class="extra__desc-item">100 Р.</dd>
               </dl>
               <button class="button" type="button" name="button">Заказать</button>
             </li>
             <li class="extra__item">
-              <h3 class="extra__title-item">витамины</h3>
-              <dl class="extra__list">
-                <dt class="extra__item">1 упаковка (30 г)</dt>
-                <dd class="extra__item">300 Р.</dd>
+              <h3 class="extra__item-title">витамины</h3>
+              <dl class="extra__desc">
+                <dt class="extra__desc-item">1 упаковка (30 г)</dt>
+                <dd class="extra__desc-item">300 Р.</dd>
               </dl>
               <button class="button" type="button" name="button">Заказать</button>
             </li>
           </ul>
-          <article class="extra__gift extra__gift--icon">
+          <article class="extra-gift extra-gift--icon">
             <p class="extra__text">Закажите все и получите чехол для кота в подарок!</p>
           </article>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
         <a  class="page-footer__link" href="#">
           <svg class="page-footer__logo" width="128" height="24" viewBox="0 0 128 24" fill="none">
             <g clip-path="url(#clip0)">
