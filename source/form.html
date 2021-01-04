@@ -15,14 +15,14 @@
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button" name="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">подбор программы</a>
+              <a class="main-nav__link main-nav__item--active" href="#">подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -31,7 +31,7 @@
     <main class="page-main">
       <section class="form">
         <div class="container">
-          <h1 class="title">Подбор программы</h1>
+          <h1 class="title-main">Подбор программы</h1>
           <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="form__main" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form-name fieldset fieldset--desktop">
@@ -67,7 +67,7 @@
               </ul>
             </fieldset>
             <fieldset class="form-contact fieldset">
-              <legend class="form-title">Контактные данные (владельца кота)</legend>
+              <legend class="title">Контактные данные (владельца кота)</legend>
               <ul class="form-contact__list list">
                 <li class="form-contact__item list__item">
                   <label class="label" for="field-email">email:<sup>*</sup></label>
@@ -80,11 +80,11 @@
               </ul>
             </fieldset>
             <fieldset class="form-comment fieldset">
-              <legend class="form-title" for="field-comment">Комментарий</legend>
+              <legend class="title" for="field-comment">Комментарий</legend>
               <textarea class="textarea" id="field-comment" name="comment" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form-extra fieldset">
-              <legend class="form-title">Дополнительно</legend>
+              <legend class="title">Дополнительно</legend>
               <ul class="form-extra__list list">
                 <li class="form-extra__item list__item">
                   <input class="checkbox" id="extra-one" type="checkbox" name="sugar" checked>
@@ -110,12 +110,15 @@
         </div>
       </section>
       <section class="map">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="map__wrapper">
-          <h3 class="map__title">приглашаем к сотрудничеству дилеров!</h3>
-          <address class="map__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="container container--map">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="map__wrapper">
+            <h3 class="map__title">приглашаем к сотрудничеству дилеров!</h3>
+            <address class="map__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
         </div>
-          <img class="map__img" src="#" alt="Карта">
+        <div class="map-img">
+        </div>
       </section>
     </main>
     <footer class="page-footer">

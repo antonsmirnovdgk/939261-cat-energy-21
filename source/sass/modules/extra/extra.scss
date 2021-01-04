@@ -1,3 +1,7 @@
+.extra {
+  overflow: hidden;
+}
+
 .extra-container {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -7,29 +11,30 @@
 }
 
 .extra__list {
-  list-style: none;
-}
-
-.extra-title {
   width: 100%;
-  margin-bottom: 36px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
-    margin-bottom: 80px;
+    padding: 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 894px;
+    padding: 0;
   }
 }
 
 .extra__item {
+  position: relative;
+  min-height: 98px;
   margin-bottom: 19px;
+  padding-top: 13px;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -39,11 +44,8 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
+    min-height: 40px;
   }
-}
-
-.extra__item:last-child {
-  margin-bottom: 0;
 }
 
 .extra__item-title {
@@ -51,6 +53,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  text-transform: uppercase;
   line-height: 20px;
   color: #222222;
 
@@ -64,9 +67,10 @@
 }
 
 .extra-gift {
+  display: flex;
   position: relative;
-  min-height: 289px;
   width: 100%;
+  min-height: 289px;
 
   &::before {
     position: absolute;
@@ -83,7 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 19%;
+    max-width: 245px;
   }
 }
 
@@ -102,5 +106,31 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     width: 100%;
+  }
+}
+
+.extra__text {
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 161px;
+  margin: auto;
+  padding-top: 126px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/catalog/gift/icon_gift.png");
+    background-repeat: no-repeat;
   }
 }

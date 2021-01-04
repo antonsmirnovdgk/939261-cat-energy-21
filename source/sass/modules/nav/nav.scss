@@ -72,9 +72,11 @@
 .main-nav__item {
   position: relative;
   margin: 0 -20px;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     margin-left: 34px;
+    border-top: 0;
 
     &:last-child {
       margin-right: 0;
@@ -88,13 +90,12 @@
       opacity: 0.6;
     }
   }
+}
+.main-nav__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
 
-  &::before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #e6e6e6;
+  @media (min-width: $tablet-width) {
+    border-bottom: 0;
   }
 }
 
