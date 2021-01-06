@@ -1,13 +1,11 @@
 .main-nav {
-  min-height: 66px;
-
   &--closed .main-nav__toggle::before {
     content: " ";
     position: absolute;
     top: 0;
     left: 0;
     width: 24px;
-    height: 2px;
+    height: 3px;
     background-color: #000000;
     box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
   }
@@ -16,7 +14,7 @@
   &--opened .main-nav__toggle::after {
     content: " ";
     position: absolute;
-    top: 0;
+    top: 7px;
     left: 0;
     width: 24px;
     height: 2px;
@@ -30,6 +28,20 @@
   &--opened .main-nav__toggle::after {
     transform: rotate(-45deg);
   }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav__toggle {
@@ -54,14 +66,12 @@
 }
 
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   list-style: none;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,11 +81,14 @@
 
 .main-nav__item {
   position: relative;
+  min-height: 66px;
   margin: 0 -20px;
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    margin-left: 34px;
+    min-height: 36px;
+    margin: 0;
+    margin-right: 34px;
     border-top: 0;
 
     &:last-child {
@@ -113,4 +126,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $blackcolor;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 10px;
+  }
 }

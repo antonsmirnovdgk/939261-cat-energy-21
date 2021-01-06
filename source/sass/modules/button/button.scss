@@ -28,3 +28,13 @@
     }
   }
 }
+
+.button--promo {
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+    margin-left: 83px;
+    padding: 14px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

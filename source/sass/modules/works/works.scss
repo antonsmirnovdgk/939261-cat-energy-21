@@ -16,7 +16,9 @@
   min-height: 300px;
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 94px;
   }
 }
 
@@ -29,6 +31,10 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
