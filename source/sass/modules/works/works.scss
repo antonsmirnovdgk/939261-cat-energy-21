@@ -42,7 +42,10 @@
   margin-bottom: 20px;
 }
 
-.works__item--one {
+.works__item--one,
+.works__item--two,
+.works__item--three,
+.works__item--four {
   position: relative;
 
   &::before {
@@ -52,7 +55,15 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-image: url("../svg/works/groupone.svg");
+    background-color: #68b738;
+  }
+}
+
+.works__item--one {
+  &::before {
+    background-image: url("../svg/works/leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -71,16 +82,10 @@
 }
 
 .works__item--two {
-  position: relative;
-
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../svg/works/grouptwo.svg");
+    background-image: url("../svg/works/tub.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -99,16 +104,10 @@
 }
 
 .works__item--three {
-  position: relative;
-
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../svg/works/groupthree.svg");
+    background-image: url("../svg/works/eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -127,16 +126,10 @@
 }
 
 .works__item--four {
-  position: relative;
-
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../svg/works/groupfour.svg");
+    background-image: url("../svg/works/alarm.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (min-width: $tablet-width) {

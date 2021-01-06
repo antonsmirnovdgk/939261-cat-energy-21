@@ -55,21 +55,24 @@
   color: #000000;
 }
 
-.testdiv {
+.example__result {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
 
-.test {
+.example__result-item:first-child {
+  margin-right: 31px;
+}
+
+.example__result-item {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 64px;
-  max-width: 124px;
+  max-width: 100%;
   width: 100%;
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -79,4 +82,18 @@
   color: #000000;
   border: 1px solid #cdcdcd;
   border-radius: 5px;
+}
+
+.weight,
+.time {
+  position: absolute;
+  max-width: 77px;
+  transform: translateY(35px);
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+  background-color: #f2f2f2;
 }

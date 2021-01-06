@@ -11,6 +11,22 @@
   }
 }
 
+.features__item--first {
+  .features__text {
+    @media (min-width: $tablet-width) {
+      max-width: 377px;
+    }
+  }
+}
+
+.features__item--second {
+  .features__text {
+    @media (min-width: $tablet-width) {
+      max-width: 342px;
+    }
+  }
+}
+
 .features__item {
   position: relative;
   min-height: 266px;
@@ -21,56 +37,56 @@
   margin-bottom: 20px;
   background-color: $greycolor;
 
-  &--first::before {
+  &--first::before,
+  &--first::after,
+  &--second::before,
+  &--second::after {
     content: "";
     position: absolute;
-    left: 22px;
-    top: 12px;
-    width: 50px;
-    height: 53px;
-    background-image: url("../svg/features/firstcat.svg");
   }
 
+  &--first::before,
   &--second::before {
-    content: "";
-    position: absolute;
-    left: 13px;
-    top: 12px;
-    width: 67px;
+    left: 25px;
+    top: 17px;
+    width: 50px;
     height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      right: 0;
+    }
+  }
+
+  &--first::after {
+    left: 31px;
+    top: 14px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../svg/features/firstcat.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 192px;
+      left: 446px;
+    }
+  }
+
+  &--second::after {
+    left: 14px;
+    top: 25px;
+    width: 67px;
+    height: 28px;
     background-image: url("../svg/features/secondcat.svg");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-
-    &--first::before {
-      background-image: none;
-    }
-
-    &--first::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 12px;
-      width: 50px;
-      height: 53px;
-      background-image: url("../svg/features/firstcat.svg");
-    }
-
-    &--second::before {
-      background-image: none;
-    }
-
-    &--second::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 12px;
-      width: 67px;
-      height: 50px;
-      background-image: url("../svg/features/secondcat.svg");
-    }
   }
 
   @media (min-width: $desktop-width) {
