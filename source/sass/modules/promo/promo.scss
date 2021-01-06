@@ -22,11 +22,7 @@
     top: 0;
     height: 302px;
     width: 100%;
-    background: linear-gradient(
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)
-      ),
-      url("../img/promo/cat.png");
+    background: $gradient, url("../img/promo/cat.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
