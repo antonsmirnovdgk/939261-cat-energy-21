@@ -58,10 +58,6 @@
       padding-right: 35px;
     }
   }
-
-  &--link {
-    background: none;
-  }
 }
 
 .catalog__item:last-child {
@@ -76,6 +72,7 @@
 
 .catalog__item--link {
   @media (min-width: $tablet-width) {
+    background: none;
     border: 1px solid #d3d3d3;
   }
 
