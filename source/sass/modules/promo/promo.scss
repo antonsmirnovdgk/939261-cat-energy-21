@@ -97,12 +97,3 @@
   text-decoration: none;
   color: $white;
 }
-
-.test {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: minmax(100px, 896px) minmax(100px, 245px);
-    grid-column-gap: 79px;
-    width: 100%;
-  }
-}
