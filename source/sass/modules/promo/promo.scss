@@ -22,7 +22,7 @@
     top: 0;
     height: 302px;
     width: 100%;
-    background: $gradient, url("../img/promo/cat.png");
+    background: $gradient, url("../img/promo/catmobile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -76,10 +76,17 @@
 }
 
 .promo__img {
+  order: 0;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    z-index: -1;
+    order: 1;
+    transform: translateY(-77px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 449px;
   }
 }
 
@@ -88,4 +95,13 @@
   line-height: 18px;
   text-decoration: none;
   color: $white;
+}
+
+.test {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 79px;
+    width: 100%;
+  }
 }

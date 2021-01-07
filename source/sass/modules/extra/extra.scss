@@ -28,7 +28,7 @@
 .extra__item {
   position: relative;
   min-height: 98px;
-  margin-bottom: 19px;
+  margin-bottom: 39px;
   padding-top: 13px;
   font-weight: normal;
   font-size: 14px;
@@ -40,6 +40,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,17 +49,23 @@
   }
 }
 
+.extra__item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
 .extra__item-title {
   margin-bottom: 13px;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
-  line-height: 20px;
   color: #222222;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,12 +112,13 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    max-width: 244px;
     width: 100%;
+    margin-right: 38px;
   }
 }
 
 .extra__text {
-  // position: relative;
   display: flex;
   justify-content: center;
   max-width: 161px;

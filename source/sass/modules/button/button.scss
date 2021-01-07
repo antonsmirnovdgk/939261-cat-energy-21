@@ -24,7 +24,7 @@
 
   &--extra {
     @media (min-width: $desktop-width) {
-      min-width: 245px;
+      max-width: 245px;
     }
   }
 }

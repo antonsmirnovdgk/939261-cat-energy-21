@@ -16,9 +16,16 @@
 .product__header {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 13px;
   max-width: 140px;
   min-height: 112px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 168px;
+    min-height: 200px;
+    margin-bottom: 34px;
+  }
 }
 
 .product__body {
@@ -59,6 +66,7 @@
 .product__desc-list {
   display: flex;
   flex-wrap: wrap;
+  max-height: 89px;
 }
 
 .product__desc-item {
