@@ -87,6 +87,7 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 449px;
+    transform: none;
   }
 }
 
@@ -100,7 +101,7 @@
 .test {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: minmax(100px, 896px) minmax(100px, 245px);
     grid-column-gap: 79px;
     width: 100%;
   }
