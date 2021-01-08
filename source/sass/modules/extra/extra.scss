@@ -48,6 +48,8 @@
     padding-right: 38px;
     font-size: 16px;
     line-height: 16px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,16 +62,14 @@
     padding-right: 0;
     font-size: 16px;
     line-height: 20px;
+    border-left: 0;
+    border-right: 0;
   }
 }
 
 .extra__item:last-child {
   border-bottom: 1px solid #cdcdcd;
 }
-
-// .extra__item:not(:last-child) {
-//   margin-bottom: 19px;
-// }
 
 .extra__item-title {
   margin-bottom: 13px;

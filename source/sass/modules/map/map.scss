@@ -9,12 +9,12 @@
     width: 100%;
     height: 100%;
     background-image: url("../img/map/location.png");
-    background-position: center center;
+    background-position: center;
     background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 400px;
+    min-height: 600px;
   }
 }
 
@@ -24,7 +24,7 @@
   padding: 0 20px;
   padding-top: 33px;
   min-height: 114px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     padding: 0 71px;
