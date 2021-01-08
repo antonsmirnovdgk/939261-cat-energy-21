@@ -3,15 +3,20 @@
 }
 
 .example__title {
+  margin-bottom: 33px;
   padding-top: 27px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__container {
-  display: flex;
-  flex-direction: column;
   min-height: 705px;
 
   @media (min-width: $tablet-width) {
@@ -26,10 +31,69 @@
 }
 
 .example__text {
+  margin-bottom: 26px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__result {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.example__result-item:first-child {
+  margin-right: 31px;
+}
+
+.example__result-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  max-width: 100%;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.weight,
+.time {
+  position: absolute;
+  max-width: 77px;
+  transform: translateY(35px);
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+  background-color: #f2f2f2;
 }

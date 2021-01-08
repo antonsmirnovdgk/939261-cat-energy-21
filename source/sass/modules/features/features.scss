@@ -3,23 +3,105 @@
 }
 
 .features__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
   }
 }
 
 .features__item {
   position: relative;
   min-height: 266px;
-  padding-top: 21px;
-  padding-right: 33px;
-  padding-bottom: 18px;
   padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   background-color: $greycolor;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 52px;
+  }
+
+  &--first::before,
+  &--first::after,
+  &--second::before,
+  &--second::after {
+    content: "";
+    position: absolute;
+  }
+
+  &--first::before,
+  &--second::before {
+    left: 25px;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 81px;
+      right: 62px;
+      margin-left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 106px;
+      top: 41px;
+      left: 52px;
+      margin-left: 0;
+    }
+  }
+
+  &--first::after {
+    left: 31px;
+    top: 22px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../svg/features/firstcat.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 192px;
+      top: 70px;
+      right: 92px;
+      margin-left: auto;
+      background-image: url("../svg/features/tabletfirst.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 140px;
+      height: 192px;
+      top: 70px;
+      right: 92px;
+      margin-left: auto;
+      background-image: url("../svg/features/tabletfirst.svg");
+    }
+  }
+
+  &--second::after {
+    left: 14px;
+    top: 34px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../svg/features/secondcat.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+      top: 127px;
+      right: 27px;
+      margin-left: auto;
+      background-image: url("../svg/features/tabletsecond.svg");
+    }
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
@@ -31,16 +113,46 @@
 }
 
 .features__title {
+  display: inline-block;
   margin-bottom: 29px;
+  padding-top: 30px;
   font-size: 24px;
-  font-weight: normal;
   line-height: 37px;
+  font-weight: normal;
   text-transform: uppercase;
   text-align: center;
   color: $blackcolor;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding-top: 77px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 214px;
+    margin-bottom: 77px;
+  }
+}
+
+.features__title--first {
+  padding-left: 69px;
+}
+
+.features__title--second {
+  padding-left: 78px;
+}
+
+.features__title--first,
+.features__title--second {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .features__text {
+  min-width: 227px;
   padding-bottom: 23px;
   margin-bottom: 15px;
   font-family: "Arial", sans-serif;
@@ -48,12 +160,60 @@
   line-height: 18px;
   color: #444444;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
+  }
+}
+
+.features__item--first {
+  .features__text {
+    @media (min-width: $tablet-width) {
+      max-width: 377px;
+    }
+  }
+}
+
+.features__item--second {
+  .features__text {
+    @media (min-width: $tablet-width) {
+      max-width: 342px;
+    }
+  }
 }
 
 .features__link {
+  position: relative;
+  padding-top: 15px;
+  padding-right: 49px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: $blackcolor;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.features__link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 32px;
+  height: 10px;
+  margin-top: 5px;
+  background-image: url("../svg/features/arrow.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
 }

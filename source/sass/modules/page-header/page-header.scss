@@ -1,3 +1,23 @@
+.page-header--img {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+      height: 694px;
+      width: 50vw;
+      background: $gradient, url("../img/promo/catdesk.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
 .page-header__container {
   position: relative;
   display: flex;
@@ -6,10 +26,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
   }
 }
 
 .page-header__logo {
   min-height: 66px;
-  padding-top: 12px;
 }

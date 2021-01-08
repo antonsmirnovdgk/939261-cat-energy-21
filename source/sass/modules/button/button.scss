@@ -1,7 +1,6 @@
 .button {
   width: 100%;
   padding: 7px 0;
-  margin-bottom: 21px;
   background: #68b738;
   border: none;
   text-transform: uppercase;
@@ -12,5 +11,31 @@
       padding: 13px 45px;
       font-size: 20px;
     }
+  }
+
+  &--catalog {
+    padding: 10px;
+  }
+
+  &--all {
+    background-color: #d3d3d3;
+    color: #444444;
+  }
+
+  &--extra {
+    @media (min-width: $desktop-width) {
+      max-width: 245px;
+      min-height: 42px;
+    }
+  }
+}
+
+.button--promo {
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+    margin-left: 83px;
+    padding: 14px 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

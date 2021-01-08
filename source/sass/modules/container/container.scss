@@ -1,5 +1,5 @@
 .container {
-  max-width: 1220px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -13,5 +13,15 @@
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
+  }
+
+  &--map {
+    padding: 0;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 95px;
+      padding-left: 110px;
+      padding-right: 110px;
+    }
   }
 }
