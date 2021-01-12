@@ -1,34 +1,33 @@
 .map {
   position: relative;
-  min-height: 460px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/map/location.png");
-    background-position: center;
-    background-size: cover;
-  }
+  min-height: 476px;
 
   @media (min-width: $tablet-width) {
     min-height: 600px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
+}
+
+.map__container {
+  max-width: 1220px;
+  padding: 0;
 }
 
 .map__wrapper {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
-  padding-top: 33px;
   min-height: 114px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     padding: 0 71px;
-    padding-top: 66px;
     min-height: 201px;
   }
 
@@ -36,14 +35,18 @@
     justify-content: space-around;
     max-width: 570px;
     max-height: 201px;
-    padding-top: 66px;
-    left: 0;
+    background-color: #ffffff;
+    transform: translateY(95px);
+  }
 
-    .container {
-      padding: 0;
-    }
+  &--desktop {
+    background-color: #ffffff;
   }
 }
+
+// .map__wrapper--desktop {
+//   background-color: #ffffff;
+// }
 
 .map__title {
   display: inline-block;
@@ -74,7 +77,45 @@
 
   @media (min-width: $tablet-width) {
     max-width: 163px;
+    min-height: 80px;
+    text-align: end;
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+.map__address-text:first-child {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-bottom: 23px;
+  }
+}
+
+.map__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.iframe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
   }
 }

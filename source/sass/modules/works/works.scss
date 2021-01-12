@@ -1,5 +1,21 @@
 .works {
+  position: relative;
   margin-bottom: 42px;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+
+      @media (min-width: $desktop-width) {
+        height: 0;
+      }
+    }
+  }
 }
 
 .works__title {
@@ -7,6 +23,12 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .works__list {

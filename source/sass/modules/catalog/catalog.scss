@@ -103,7 +103,14 @@
       top: 0;
       width: 30px;
       height: 30px;
-      background-image: url("../svg/catalog-link/plus.svg");
+      background-image: url("../svg/catalog-link/plus-small.svg");
+
+      @media (min-width: $tablet-width) {
+        width: 60px;
+        height: 60px;
+        background-image: url("../svg/catalog-link/plus-big.svg");
+        transform: translateY(-106px);
+      }
     }
   }
 
@@ -127,15 +134,5 @@
       font-size: 16px;
       line-height: 18px;
     }
-  }
-}
-
-.test {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: minmax(100px, 896px) minmax(100px, 245px);
-    grid-column-gap: 79px;
-    min-height: 288px;
-    width: 100%;
   }
 }

@@ -1,15 +1,26 @@
 .button {
   width: 100%;
-  padding: 7px 0;
-  background: #68b738;
-  border: none;
+  padding: 8px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
+  background: $basic-green;
+  border: none;
 
   &--form {
+    margin-bottom: 21px;
+
     @media (min-width: $tablet-width) {
       width: 50%;
       padding: 13px 45px;
+      margin-bottom: 0;
       font-size: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-right: 81px;
     }
   }
 

@@ -1,3 +1,11 @@
+.page-header {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 0;
+  }
+}
+
 .page-header--img {
   position: relative;
 
@@ -14,7 +22,36 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        right: 0;
+        top: 0;
+        height: 694px;
+        width: 50vw;
+        background: $gradient, url("../img/promo/catdesk-2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     }
+  }
+}
+
+.page-header__img {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 51px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__logo-svg {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -26,6 +63,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-top: 26px;
   }
 
@@ -35,5 +73,21 @@
 }
 
 .page-header__logo {
-  min-height: 66px;
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+}
+
+.page-header__logo-text {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-footer__link--vk,
+.page-footer__link--instagram,
+.page-footer__link--facebook {
+  &:hover svg {
+    fill: $basic-green;
+  }
 }

@@ -1,3 +1,10 @@
+input[type="text"] {
+  width: 100%;
+  padding: 13px 15px 13px 15px;
+  margin-left: 14px;
+  border: 1px solid #e7e7e7;
+}
+
 input::-webkit-input-placeholder {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;

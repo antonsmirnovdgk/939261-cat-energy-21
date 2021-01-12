@@ -6,6 +6,8 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
   }

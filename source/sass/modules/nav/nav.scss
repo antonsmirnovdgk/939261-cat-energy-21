@@ -102,14 +102,10 @@
     &:hover {
       opacity: 0.6;
     }
-  }
-}
 
-.main-nav__item:last-child {
-  border-bottom: 1px solid #e6e6e6;
-
-  @media (min-width: $tablet-width) {
-    border-bottom: 0;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -129,6 +125,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 16px;
     padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {

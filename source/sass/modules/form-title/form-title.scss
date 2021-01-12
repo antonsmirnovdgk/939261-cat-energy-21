@@ -1,0 +1,28 @@
+.form-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 35px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 12px;
+    width: 95%;
+    border-top: 2px solid #68b738;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

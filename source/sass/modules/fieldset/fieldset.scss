@@ -1,0 +1,14 @@
+.fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 32px;
+  border: none;
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      max-width: 46%;
+    }
+  }
+}

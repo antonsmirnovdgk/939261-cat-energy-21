@@ -25,7 +25,7 @@
       background-color: #68b738;
 
       @media (min-width: $desktop-width) {
-        margin-right: 40px;
+        // margin-right: 40px;
       }
     }
   }
@@ -48,5 +48,80 @@
       top: 18px;
       margin-left: 36px;
     }
+  }
+}
+
+.title--contact {
+  max-width: 187px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
+}
+
+.title--contact,
+.title--comment,
+.title--extra,
+.title--catalog {
+  position: relative;
+}
+
+.title--contact::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 100vw;
+  height: 2px;
+  margin-left: 43px;
+  background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    margin-left: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--contact::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 18px;
+    width: 100vw;
+    height: 2px;
+    right: 540px;
+    background-color: #68b738;
+  }
+  .title--comment::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 18px;
+    width: 100vw;
+    height: 2px;
+    right: 220px;
+    background-color: #68b738;
+  }
+
+  .title--extra::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 18px;
+    width: 100vw;
+    height: 2px;
+    right: 245px;
+    background-color: #68b738;
+  }
+
+  .title--catalog::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 18px;
+    width: 100vw;
+    height: 2px;
+    right: 370px;
+    background-color: #68b738;
   }
 }

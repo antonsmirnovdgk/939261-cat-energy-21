@@ -7,11 +7,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 873px;
+    margin-bottom: 0;
     color: $blackcolor;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 582px;
+    margin-bottom: 82px;
   }
 
   &::before {
@@ -26,6 +28,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      height: 302px;
+      background: $gradient, url("../img/promo/catmobile-2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
 
     @media (min-width: $tablet-width) {
       background: none;
@@ -56,6 +66,10 @@
     line-height: 60px;
     text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+  }
 }
 
 .promo__slogan {
@@ -75,19 +89,29 @@
   }
 }
 
+.promo-pic {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
 .promo__img {
+  position: relative;
   order: 0;
 
   @media (min-width: $tablet-width) {
     z-index: -1;
-    order: 1;
     transform: translateY(-77px);
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     width: 552px;
     height: 449px;
-    transform: none;
+    transform: translateX(110px) translateY(-350px);
   }
 }
 

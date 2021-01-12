@@ -1,0 +1,37 @@
+.label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--weight {
+    width: 100px;
+
+    @media screen {
+    }
+  }
+
+  &--age {
+    width: 240px;
+
+    @media (min-width: $tablet-width) {
+      width: 170px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 190px;
+    }
+  }
+
+  &--checkbox {
+    color: #222222;
+  }
+}

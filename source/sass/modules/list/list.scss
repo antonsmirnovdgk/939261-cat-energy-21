@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+@media (min-width: $desktop-width) {
+  .list--desktop {
+    flex-direction: column;
+    padding: 25px;
+  }
+}
