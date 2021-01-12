@@ -15,23 +15,20 @@
   &--weight {
     width: 100px;
 
-    @media screen {
+    &--age {
+      width: 240px;
+
+      @media (min-width: $tablet-width) {
+        width: 170px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 190px;
+      }
     }
-  }
 
-  &--age {
-    width: 240px;
-
-    @media (min-width: $tablet-width) {
-      width: 170px;
+    &--checkbox {
+      color: #222222;
     }
-
-    @media (min-width: $desktop-width) {
-      width: 190px;
-    }
-  }
-
-  &--checkbox {
-    color: #222222;
   }
 }
