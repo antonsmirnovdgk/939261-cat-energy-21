@@ -1,11 +1,11 @@
 .features {
   margin-bottom: 27px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 45px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     margin-bottom: 71px;
   }
 }
@@ -13,7 +13,7 @@
 .features__list {
   display: grid;
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 80px;
   }
@@ -27,7 +27,7 @@
   margin-bottom: 20px;
   background-color: $greycolor;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     padding-right: 0;
     padding-left: 52px;
   }
@@ -49,7 +49,7 @@
     background-color: #68b738;
     border-radius: 50%;
 
-    @media (min-width: $tablet-width) {
+    @include tablet {
       width: 200px;
       height: 200px;
       top: 81px;
@@ -57,7 +57,7 @@
       margin-left: auto;
     }
 
-    @media (min-width: $desktop-width) {
+    @include desktop {
       width: 100px;
       height: 106px;
       top: 41px;
@@ -74,7 +74,7 @@
     background-image: url("../svg/features/firstcat.svg");
     background-repeat: no-repeat;
 
-    @media (min-width: $tablet-width) {
+    @include tablet {
       width: 140px;
       height: 192px;
       top: 70px;
@@ -83,7 +83,7 @@
       background-image: url("../svg/features/tabletfirst.svg");
     }
 
-    @media (min-width: $desktop-width) {
+    @include desktop {
       width: 70px;
       height: 97px;
       top: 41px;
@@ -102,7 +102,7 @@
     background-image: url("../svg/features/secondcat.svg");
     background-repeat: no-repeat;
 
-    @media (min-width: $tablet-width) {
+    @include tablet {
       width: 268px;
       height: 112px;
       top: 127px;
@@ -111,7 +111,7 @@
       background-image: url("../svg/features/tabletsecond.svg");
     }
 
-    @media (min-width: $desktop-width) {
+    @include desktop {
       width: 134px;
       height: 56px;
       top: 67px;
@@ -122,11 +122,11 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     min-height: 372px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     min-height: 374px;
   }
 }
@@ -141,7 +141,7 @@
 
 .features__title--first,
 .features__title--second {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     padding-left: 0;
   }
 }
@@ -157,14 +157,14 @@
   text-align: center;
   color: $blackcolor;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 24px;
     padding-top: 77px;
     font-size: 36px;
     line-height: 36px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     padding-left: 181px;
     margin-bottom: 77px;
   }
@@ -180,13 +180,13 @@
   color: #444444;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     padding-bottom: 48px;
     margin-bottom: 0;
     border-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     min-height: 95px;
     padding-bottom: 23px;
   }
@@ -194,7 +194,7 @@
 
 .features__item--first {
   .features__text {
-    @media (min-width: $tablet-width) {
+    @include tablet {
       max-width: 377px;
     }
   }
@@ -202,7 +202,7 @@
 
 .features__item--second {
   .features__text {
-    @media (min-width: $tablet-width) {
+    @include tablet {
       max-width: 342px;
     }
   }
@@ -218,7 +218,11 @@
   text-decoration: none;
   color: $blackcolor;
 
-  @media (min-width: $tablet-width) {
+  &:active {
+    opacity: 0.6;
+  }
+
+  @include tablet {
     font-size: 20px;
     line-height: 30px;
   }
@@ -230,10 +234,14 @@
   right: 0;
   width: 32px;
   height: 10px;
-  margin-top: 5px;
+  top: 20px;
   background-image: url("../svg/features/arrow.svg");
 
-  @media (min-width: $tablet-width) {
-    margin-top: 10px;
+  @include tablet {
+    top: 23px;
   }
+}
+
+.features__link:hover::before {
+  background-image: url("../svg/features/arrow-hover.svg");
 }

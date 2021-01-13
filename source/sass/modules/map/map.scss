@@ -26,12 +26,12 @@
   min-height: 114px;
   background-color: #f2f2f2;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     padding: 0 71px;
     min-height: 201px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     justify-content: space-around;
     max-width: 570px;
     max-height: 201px;
@@ -39,14 +39,10 @@
     transform: translateY(95px);
   }
 
-  &--desktop {
+  &--index {
     background-color: #ffffff;
   }
 }
-
-// .map__wrapper--desktop {
-//   background-color: #ffffff;
-// }
 
 .map__title {
   display: inline-block;

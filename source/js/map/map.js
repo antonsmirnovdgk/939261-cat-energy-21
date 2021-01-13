@@ -1,95 +1,27 @@
-var TABLET_WIDTH = 768; //px
+let mapone = document.querySelector('#map');
+let markerImage = "img/map/icon/mappin.png"
+let coordinates = [59.938635, 30.323118]
 
-  var DESKTOP_WIDTH = 1300; //px
+ymaps.ready(() => {
+  let map = new ymaps.Map(mapone, {
+    center: coordinates,
+    // Уровень масштабирования. Допустимые значения:
 
-  var mapElement = document.querySelector(".map-js");
+    // от 0 (весь мир) до 19.
+    zoom: 16
+  });
 
-
-  if (mapElement) {
-
-    var map = "";
-
-    google.maps.event.addDomListener(window, "load", init);
-
-    google.maps.event.addDomListener(window, "resize", resizeMap);
-
-
-    function init() {
-
-      var mapOptions = {
-
-        zoom: 16,
-
-        mapTypeControl: false,
-
-        zoomControl: true,
-
-        scrollwheel: false,
-
-        zoomControlOptions: {
-
-          position: google.maps.ControlPosition.LEFT_TOP
-
-        },
-
-        streetViewControl: false,
-
-        center: new google.maps.LatLng(59.939181, 30.321469),
-
-      };
-
-
-      map = new google.maps.Map(mapElement, mapOptions);
-
-      var image = {
-
-        url: "img/map-pin.png",
-
-        size: new google.maps.Size(124, 106),
-
-        origin: new google.maps.Point(0, 0),
-
-        anchor: new google.maps.Point(62, 106)
-
-      };
-
-
-      var marker = new google.maps.Marker({
-
-        position: new google.maps.LatLng(59.938790, 30.323199),
-
-        map: map,
-
-        optimized: false,
-
-        icon: image
-
-      });
-
-      resizeMap();
-
+  let catEnergy = new ymaps.Placemark(
+    map.getCenter(),
+    {
+      hintContent: "Cat Energy"
+    },
+    {
+      iconLayout: "default#imageWithContent",
+      iconImageHref: markerImage,
+      iconImageSize: [56, 52],
+      iconImageOffset: [-33, -100]
     }
-
-
-    function resizeMap() {
-
-      google.maps.event.trigger(map, "resize");
-
-      var width = getScreenWidth();
-
-      map.setZoom(width >= TABLET_WIDTH ? 17 : 16);
-
-
-      if (width >= DESKTOP_WIDTH) {
-
-        map.panTo(new google.maps.LatLng(59.939117, 30.319356));
-
-      } else {
-
-        map.panTo(new google.maps.LatLng(59.938790, 30.323199));
-
-      }
-
-    }
-
-  }
+  );
+  map.geoObjects.add(catEnergy);
+});

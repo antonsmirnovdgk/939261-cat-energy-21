@@ -1,15 +1,34 @@
 .page-header {
   border-bottom: 1px solid #e6e6e6;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     border-bottom: 0;
+  }
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .page-header--img {
   position: relative;
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     &::before {
       content: "";
       position: absolute;
@@ -23,14 +42,8 @@
       background-position: center;
       background-size: cover;
 
-      @media (min-resolution: 2dppx) {
-        right: 0;
-        top: 0;
-        height: 694px;
-        width: 50vw;
+      @include retina() {
         background: $gradient, url("../img/promo/catdesk-2x.png");
-        background-repeat: no-repeat;
-        background-position: center;
         background-size: cover;
       }
     }
@@ -38,19 +51,19 @@
 }
 
 .page-header__img {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     width: 174px;
     height: 51px;
   }
 
-  @media (min-width: $tablet-width) {
+  @include desktop {
     width: 202px;
     height: 59px;
   }
 }
 
 .page-header__logo-svg {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     display: none;
   }
 }
@@ -60,34 +73,46 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 26px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     padding-top: 53px;
   }
 }
 
-.page-header__logo {
-  display: flex;
-  align-items: center;
-  min-height: 65px;
+.page-header__logo-catenergy {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .page-header__logo-text {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     display: none;
   }
 }
 
-.page-footer__link--vk,
-.page-footer__link--instagram,
-.page-footer__link--facebook {
+.page-footer__link-vk,
+.page-footer__link-instagram,
+.page-footer__link-facebook {
   &:hover svg {
     fill: $basic-green;
   }
+}
+
+.page-footer__copyright:active {
+  opacity: 0.7;
+
+  .page-footer__link-facebook svg {
+    fill: $basic-green;
+  }
+}
+
+.page-footer__link-facebook {
+  @include size(22px);
 }

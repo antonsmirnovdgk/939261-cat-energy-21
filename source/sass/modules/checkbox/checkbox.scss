@@ -3,39 +3,37 @@
 
   & + label {
     margin-left: 49px;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
   }
+}
 
-  & + label::before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #bababa;
-    cursor: pointer;
-  }
+.checkbox + label::before,
+.checkbox:checked + label::before,
+.checkbox:disabled + label::before {
+  content: " ";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  bottom: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bababa;
+  cursor: pointer;
 
-  &:checked + label::before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #cdcdcd;
-    background-image: url("../../svg/checkbox/checkbox-checked.svg");
+  @include tablet {
+    top: 0;
   }
+}
 
-  &:disabled + label::before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    width: 30px;
-    height: 30px;
-    opacity: 0.3;
-    border: 1px solid #bababa;
-  }
+.checkbox + label:hover::before {
+  background-image: url("../../svg/checkbox/checkbox-checked.svg");
+}
+
+.checkbox:checked + label::before {
+  border: 1px solid $grey;
+  background-image: url("../../svg/checkbox/checkbox-checked.svg");
+}
+
+.checkbox:disabled + label::before {
+  opacity: 0.3;
 }

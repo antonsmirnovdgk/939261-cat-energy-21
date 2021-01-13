@@ -16,13 +16,6 @@
   }
 }
 
-// .page-footer__link {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   min-height: 95px;
-// }
-
 .page-footer__social {
   display: flex;
   justify-content: space-between;
@@ -64,6 +57,14 @@
   @media (max-width: $mobile-width) {
     padding-top: 39px;
     padding-bottom: 32px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

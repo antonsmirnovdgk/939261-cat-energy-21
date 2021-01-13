@@ -5,7 +5,7 @@
   font-size: 36px;
   line-height: 36px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     padding-top: 64px;
     margin-bottom: 54px;
     font-size: 60px;

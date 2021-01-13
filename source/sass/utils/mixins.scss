@@ -1,0 +1,72 @@
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  min-height: $height;
+}
+
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+
+  ::-webkit-input-placeholder {
+    @content;
+  }
+
+  :-moz-placeholder {
+    @content;
+  }
+
+  ::-moz-placeholder {
+    @content;
+  }
+
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin textarea {
+  &::placeholder {
+    @content;
+  }
+
+  ::-webkit-input-placeholder {
+    @content;
+  }
+
+  :-moz-placeholder {
+    @content;
+  }
+
+  ::-moz-placeholder {
+    @content;
+  }
+
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
+    @content;
+  }
+}

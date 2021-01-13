@@ -15,20 +15,32 @@
   &--weight {
     width: 100px;
 
-    &--age {
-      width: 240px;
-
-      @media (min-width: $tablet-width) {
-        width: 170px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 190px;
-      }
-    }
-
     &--checkbox {
       color: #222222;
     }
+  }
+}
+
+.label-email {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    background-image: url("../svg/form/icon_email.svg");
+  }
+}
+
+.label--age {
+  width: 240px;
+
+  @include tablet {
+    width: 170px;
+  }
+
+  @include desktop {
+    width: 190px;
   }
 }

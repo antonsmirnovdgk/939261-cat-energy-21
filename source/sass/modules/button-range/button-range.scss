@@ -23,11 +23,11 @@
   position: relative;
   width: 84px;
   height: 14px;
-  background-color: #ffffff;
+  background-color: $white;
   border-radius: 7px;
   cursor: pointer;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     display: none;
   }
 }
@@ -39,7 +39,7 @@
   left: 5px;
   width: 35px;
   height: 8px;
-  background-color: #68b738;
+  background-color: $basic-green;
   border-radius: 6px;
 }
 
@@ -51,7 +51,7 @@
 .button-mob {
   margin: 0 17px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin: 0 25px;
   }
 }

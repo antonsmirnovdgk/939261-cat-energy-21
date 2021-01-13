@@ -2,17 +2,17 @@
   position: relative;
   background-color: #f2f2f2;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     background-color: #ffffff;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     min-height: 656px;
   }
 }
 
 .example::before {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     content: "";
     position: absolute;
     bottom: 0;
@@ -23,7 +23,7 @@
 }
 
 .example__wrapper {
-  @media (min-width: $desktop-width) {
+  @include desktop {
     min-width: 570px;
   }
 }
@@ -35,13 +35,13 @@
   line-height: 40px;
   font-weight: 400;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     margin-bottom: 146px;
   }
 }
@@ -53,11 +53,11 @@
   z-index: 1;
   max-height: 705px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     max-height: 1081px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     flex-wrap: nowrap;
     max-height: 656px;
   }
@@ -72,13 +72,13 @@
   line-height: 18px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     max-width: 436px;
     margin-bottom: 69px;
   }
@@ -95,7 +95,7 @@
   text-transform: uppercase;
   color: #000000;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     max-width: 175px;
     padding-top: 0;
     margin-left: auto;
@@ -104,7 +104,7 @@
     text-align: end;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     max-width: 100%;
     padding-top: 55px;
     text-align: start;
@@ -116,12 +116,12 @@
   flex-wrap: wrap;
   margin-bottom: 42px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     align-items: center;
     flex-wrap: nowrap;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     flex-wrap: wrap;
   }
 }
@@ -129,7 +129,7 @@
 .example__result-item:first-child {
   margin-right: auto;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-right: 42px;
   }
 }
@@ -152,7 +152,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 5px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     max-width: 162px;
     min-height: 72px;
     font-size: 30px;
@@ -173,25 +173,25 @@
   text-transform: none;
   background-color: #f2f2f2;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     background-color: #f2f2f2;
   }
 }
 
 .example__weight-lost {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     min-width: 113px;
   }
 }
 
 .example__time {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     min-width: 147px;
   }
 }
@@ -203,7 +203,7 @@
   margin-bottom: 23px;
   height: 240px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     height: 536px;
   }
 }
@@ -228,7 +228,7 @@
   min-height: 311px;
   width: 100%;
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     width: 690px;
   }
 }
@@ -243,14 +243,14 @@
 .example__before {
   background-image: url("../img/slider/before/mobile/before.png");
 
-  @media (min-resolution: 2dppx) {
+  @include retina {
     background-image: url("../img/slider/before/mobile/before@2x.png");
   }
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     background-image: url("../img/slider/before/desk/before.png");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/slider/before/desk/before@2x.png");
     }
   }
@@ -260,14 +260,14 @@
   width: 0;
   background-image: url("../img/slider/after/mobile/after.png");
 
-  @media (min-resolution: 2dppx) {
+  @include retina {
     background-image: url("../img/slider/after/mobile/after@2x.png");
   }
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     background-image: url("../img/slider/after/desk/after.png");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/slider/after/desk/after@2x.png");
     }
   }
@@ -279,16 +279,25 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 2px dotted #dcdcdc;
+    border-bottom: 2px dotted $grey;
+
+    &:hover {
+      border-bottom: 2px solid $grey;
+    }
+
+    &:active {
+      border-bottom: 0;
+    }
   }
 }
 
 .example__range {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     position: relative;
     margin: 0 17px;
     width: 100%;
@@ -299,7 +308,7 @@
 }
 
 .example__range-button {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     position: relative;
     top: -14px;
     width: 34px;
@@ -310,11 +319,19 @@
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
     cursor: pointer;
 
+    &:hover {
+      box-shadow: 2px 4px 3px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+    }
+
     &::before {
       content: "";
       position: absolute;
       top: 12px;
-      left: 13px;
+      left: 15px;
       width: 8px;
       height: 8px;
       background-color: $basic-green;

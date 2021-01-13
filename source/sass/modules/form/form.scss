@@ -55,14 +55,17 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     align-items: center;
-    width: 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: auto;
     max-width: 180px;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
