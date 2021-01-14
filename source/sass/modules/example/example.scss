@@ -17,7 +17,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 462px;
+    height: 463px;
     background-color: #f2f2f2;
   }
 }
@@ -199,7 +199,6 @@
 .example__img {
   position: relative;
   display: flex;
-  justify-content: center;
   margin-bottom: 23px;
   height: 240px;
 
@@ -228,52 +227,68 @@
   min-height: 311px;
   width: 100%;
 
-  @include desktop {
+  @include tablet {
+    margin: 0 auto;
     width: 690px;
   }
 }
 
 .example__before,
 .example__after {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  text-align: center;
 }
 
 .example__before {
-  background-image: url("../img/slider/before/mobile/before.png");
-
-  @include retina {
-    background-image: url("../img/slider/before/mobile/before@2x.png");
+  @include tablet {
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    background: linear-gradient(to top, #f2f2f2 70%, white 15%);
   }
 
-  @include tablet {
-    background-image: url("../img/slider/before/desk/before.png");
-
-    @include retina {
-      background-image: url("../img/slider/before/desk/before@2x.png");
-    }
+  @include desktop {
+    background: linear-gradient(to top, #f2f2f2 64%, white 15%);
   }
 }
 
 .example__after {
-  width: 0;
-  background-image: url("../img/slider/after/mobile/after.png");
-
-  @include retina {
-    background-image: url("../img/slider/after/mobile/after@2x.png");
-  }
+  display: none;
 
   @include tablet {
-    background-image: url("../img/slider/after/desk/after.png");
+    position: absolute;
+    display: block;
+    z-index: -1;
+    right: 52px;
+  }
 
-    @include retina {
-      background-image: url("../img/slider/after/desk/after@2x.png");
+  @include desktop {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 129px;
+      width: 100vw;
+      height: 100%;
+      background: linear-gradient(to top, #ebebeb 87%, white 15%);
     }
   }
 }
 
-.example__polzunok-text {
+.example__before-img {
+  @include tablet {
+    width: 670px;
+    height: 520px;
+  }
+}
+
+.example__after-img {
+  @include tablet {
+    width: 566px;
+    height: 520px;
+  }
+}
+
+.example .example__polzunok-text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -300,7 +315,7 @@
   @include tablet {
     position: relative;
     margin: 0 17px;
-    width: 100%;
+    width: 428px;
     height: 6px;
     background: $grey;
     border-radius: 6px;
@@ -308,11 +323,18 @@
 }
 
 .example__range-button {
+  display: none;
+
   @include tablet {
-    position: relative;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
     top: -14px;
     width: 34px;
     height: 34px;
+    transform: translateX(-50%);
     border: none;
     border-radius: 50%;
     background-color: $white;
@@ -330,10 +352,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: 12px;
-      left: 15px;
       width: 8px;
       height: 8px;
+      margin: auto;
       background-color: $basic-green;
       border-radius: 50%;
     }

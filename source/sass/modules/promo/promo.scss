@@ -100,15 +100,19 @@
   order: 0;
 
   @include tablet {
+    position: absolute;
     z-index: -1;
-    transform: translateY(-77px);
+    transform: translateX(-50%);
+    left: 50%;
+    top: 270px;
   }
 
   @include desktop {
     position: absolute;
+    top: 55px;
     width: 552px;
     height: 449px;
-    transform: translateX(110px) translateY(-350px);
+    transform: translateX(-30%);
   }
 }
 

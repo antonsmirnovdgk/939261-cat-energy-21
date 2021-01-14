@@ -143,11 +143,14 @@
                 <span class="map__city">Санкт-Петербург</span>
               </address>
           </div>
-            <picture>
-              <source media="(min-width: 1220px)" srcset="img/map/desk/desk.png">
-              <source media="(min-width: 768px)" srcset="img/map/tablet/tab.png">
-              <img class="map__img" src="img/map/mob/mob.png" alt="">
-            </picture>
+          <picture>
+            <source type="image/webp" media="(min-width: 1220px)" srcset="img/map/desk/desk.webp 1, img/map/desk/desk@2x.webp 2">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map/tablet/tab.webp 1, img/map/tablet/tab@2x.webp 2">
+            <source type="image/webp" srcset="img/map/mob/mob.webp 1, img/map/mob/mob@2x.webp 2">
+            <source media="(min-width: 1220px)" srcset="img/map/desk/desk.png 1, img/map/desk/desk@2x.png 2">
+            <source media="(min-width: 768px)" srcset="img/map/tablet/tab.png 1, img/map/tablet/tab@2x.png 2">
+            <img class="map__img" src="img/map/mob/mob.png" srcset="img/map/mob/mob@2x.png 2" alt="Карта">
+          </picture>
         </div>
         <!-- <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.214070321069!2
             d30.32135800976628!3d59.93866259150999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc
