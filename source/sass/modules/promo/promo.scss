@@ -5,13 +5,15 @@
   color: $white;
   min-height: 480px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     min-height: 873px;
+    margin-bottom: 0;
     color: $blackcolor;
   }
 
-  @media (min-width: $tablet-width) {
+  @include desktop {
     min-height: 582px;
+    margin-bottom: 82px;
   }
 
   &::before {
@@ -27,7 +29,12 @@
     background-position: center;
     background-size: cover;
 
-    @media (min-width: $tablet-width) {
+    @include retina {
+      background: $gradient, url("../img/promo/catmobile-2x.png");
+      background-size: cover;
+    }
+
+    @include tablet {
       background: none;
     }
   }
@@ -47,7 +54,7 @@
   font-size: 36px;
   line-height: 36px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     max-width: 414px;
     margin-bottom: 41px;
     margin-left: 87px;
@@ -55,6 +62,10 @@
     font-size: 60px;
     line-height: 60px;
     text-align: start;
+  }
+
+  @include desktop {
+    padding-top: 111px;
   }
 }
 
@@ -66,7 +77,7 @@
   line-height: 14px;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 49px;
     margin-left: 87px;
     font-size: 20px;
@@ -75,19 +86,33 @@
   }
 }
 
+.promo-pic {
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    order: 1;
+  }
+}
+
 .promo__img {
+  position: relative;
   order: 0;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
+    position: absolute;
     z-index: -1;
-    order: 1;
-    transform: translateY(-77px);
+    transform: translateX(-50%);
+    left: 50%;
+    top: 270px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
+    position: absolute;
+    top: 55px;
     width: 552px;
     height: 449px;
-    transform: none;
+    transform: translateX(-30%);
   }
 }
 

@@ -1,14 +1,33 @@
 .button {
-  width: 100%;
-  padding: 7px 0;
-  background: #68b738;
-  border: none;
+  @include size(100%, 40px);
+  padding: 9px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
+  background: $basic-green;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--form {
-    @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+
+    @include tablet {
       width: 50%;
+      max-width: 568px;
+      min-height: 52px;
       padding: 13px 45px;
+      margin-right: 81px;
+      margin-bottom: 0;
       font-size: 20px;
     }
   }
@@ -19,11 +38,15 @@
 
   &--all {
     background-color: #d3d3d3;
-    color: #444444;
+    color: $special_dark-grey;
+
+    &:hover {
+      background-color: $special_grey-2;
+    }
   }
 
   &--extra {
-    @media (min-width: $desktop-width) {
+    @include desktop {
       max-width: 245px;
       min-height: 42px;
     }
@@ -31,7 +54,7 @@
 }
 
 .button--promo {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     max-width: 244px;
     margin-left: 83px;
     padding: 14px 0;

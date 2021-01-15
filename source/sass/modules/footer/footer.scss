@@ -16,21 +16,20 @@
   }
 }
 
-.page-footer__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 95px;
-}
-
 .page-footer__social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 130px;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
   list-style: none;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .page-footer__icon {
@@ -39,4 +38,96 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.page-footer__copy {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
+}
+
+.page-footer__link {
+  @media (max-width: $mobile-width) {
+    padding-top: 39px;
+    padding-bottom: 32px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__link,
+.page-footer__social {
+  @media (max-width: $mobile-width) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.page-footer__link-vk,
+.page-footer__link-instagram,
+.page-footer__link-facebook {
+  fill: #666666;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__icon-academy {
+  fill: $spacial-grey;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: $special_dark-grey;
+
+  @media (max-width: $mobile-width) {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &:hover .page-footer__icon-academy {
+    fill: $basic-green;
+  }
+
+  &:active .page-footer__icon-academy {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }

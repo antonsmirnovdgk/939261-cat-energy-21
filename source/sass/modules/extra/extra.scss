@@ -11,13 +11,23 @@
   }
 }
 
+.extra-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: minmax(100px, 896px) minmax(100px, 245px);
+    grid-column-gap: 79px;
+    min-height: 288px;
+    width: 100%;
+  }
+}
+
 .extra__list {
   width: 100%;
   padding: 0;
   margin-bottom: 39px;
   list-style: none;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 69px;
   }
 
@@ -38,7 +48,7 @@
   color: #444444;
   border-top: 1px solid #cdcdcd;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -80,7 +90,7 @@
   text-transform: uppercase;
   color: #222222;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     width: 50%;
     font-size: 20px;
     line-height: 20px;
@@ -112,7 +122,7 @@
     background-position: center;
   }
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     min-height: 200px;
   }
 
@@ -131,7 +141,7 @@
   font-weight: normal;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-left: auto;
   }
 
@@ -145,7 +155,7 @@
 }
 
 .extra__desc-item:first-child {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     padding-right: 49px;
   }
 
@@ -168,7 +178,7 @@
   text-align: center;
   color: #ffffff;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     align-items: center;
     padding-top: 0;
     margin: 0;
@@ -192,7 +202,7 @@
     background-image: url("../img/catalog/gift/icon_gift.png");
     background-repeat: no-repeat;
 
-    @media (min-width: $tablet-width) {
+    @include tablet {
       left: 78px;
     }
 

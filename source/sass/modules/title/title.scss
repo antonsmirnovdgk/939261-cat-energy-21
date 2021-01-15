@@ -8,8 +8,8 @@
   font-size: 24px;
   line-height: 24px;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+  @include tablet {
+    margin-bottom: 76px;
     padding-left: 38px;
     font-size: 36px;
     line-height: 36px;
@@ -25,7 +25,7 @@
       background-color: #68b738;
 
       @media (min-width: $desktop-width) {
-        margin-right: 40px;
+        // margin-right: 40px;
       }
     }
   }
@@ -44,9 +44,67 @@
     margin-left: 22px;
     background-color: #68b738;
 
-    @media (min-width: $tablet-width) {
+    @include tablet {
       top: 18px;
       margin-left: 36px;
     }
+  }
+}
+
+.title--contact {
+  max-width: 187px;
+
+  @include tablet {
+    max-width: 100%;
+  }
+}
+
+.title--contact,
+.title--comment,
+.title--extra,
+.title--catalog {
+  position: relative;
+}
+
+.title--contact::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 100vw;
+  height: 2px;
+  margin-left: 43px;
+  background-color: $basic-green;
+
+  @include tablet {
+    top: 18px;
+    margin-left: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--contact::before,
+  .title--comment::before,
+  .title--extra::before,
+  .title--catalog::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 18px;
+    width: 100vw;
+    height: 2px;
+    right: 540px;
+    background-color: $basic-green;
+  }
+
+  .title--comment::before {
+    right: 220px;
+  }
+
+  .title--extra::before {
+    right: 245px;
+  }
+
+  .title--catalog::before {
+    right: 370px;
   }
 }

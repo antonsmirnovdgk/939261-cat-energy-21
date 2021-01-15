@@ -4,17 +4,30 @@
   & + label {
     margin-left: 60px;
     margin-bottom: 13px;
+
+    @include tablet {
+      margin-bottom: 5px;
+    }
   }
 
   & + label::before {
     content: " ";
     position: absolute;
+    top: -7px;
     left: 0;
     bottom: 5px;
     width: 30px;
     height: 30px;
     background-image: url("../../svg/radio/radio.svg");
     cursor: pointer;
+
+    @include tablet {
+      top: 0;
+    }
+  }
+
+  & + label:hover::before {
+    background-image: url("../../svg/radio/radio-checked.svg");
   }
 
   &:checked + label::before {
@@ -27,3 +40,9 @@
     background-image: url("../../svg/radio/radio-checked.svg");
   }
 }
+
+// .radio + label::before {
+//   @include tablet {
+//     top: 0;
+//   }
+// }

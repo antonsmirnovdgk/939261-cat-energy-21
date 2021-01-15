@@ -1,19 +1,20 @@
 .textarea {
   width: 100%;
+  min-height: 150px;
   padding: 10px 19px;
   border: 1px solid #e7e7e7;
   text-transform: uppercase;
-}
 
-textarea::-webkit-input-placeholder,
-textarea::-moz-placeholder,
-textarea:-ms-input-placeholder,
-textarea::-ms-input-placeholder,
-textarea::placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
+  @include tablet {
+    min-height: 174px;
+  }
+
+  @include textarea() {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+  }
 }

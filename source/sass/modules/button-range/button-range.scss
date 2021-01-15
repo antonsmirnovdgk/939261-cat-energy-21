@@ -1,0 +1,57 @@
+// .button-range {
+//   appearance: none;
+//   position: relative;
+//   width: 84px;
+//   height: 14px;
+//   border-radius: 20px;
+//   overflow: hidden;
+// }
+
+// .button-range::-moz-range-thumb {
+//   appearance: none;
+//   width: 35px;
+//   height: 6px;
+//   background: #68b738;
+//   border-radius: 6px;
+//   border: none;
+//   cursor: pointer;
+// }
+
+.button-mob {
+  display: block;
+  appearance: none;
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: $white;
+  border-radius: 7px;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.button-mob::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 35px;
+  height: 8px;
+  background-color: $basic-green;
+  border-radius: 6px;
+}
+
+.button-mob:checked::before {
+  left: 43px;
+}
+
+.button-desk,
+.button-mob {
+  margin: 0 17px;
+
+  @include tablet {
+    margin: 0 25px;
+  }
+}

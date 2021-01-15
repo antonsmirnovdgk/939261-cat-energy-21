@@ -1,8 +1,8 @@
 .catalog__list {
-  list-style: none;
+  @include list-reset;
   margin: 0 -20px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
     grid-column-gap: 60px;
@@ -18,7 +18,7 @@
 .catalog-title {
   margin-bottom: 41px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     margin-bottom: 83px;
   }
 }
@@ -36,18 +36,15 @@
   width: 100%;
   min-height: 190px;
   margin-bottom: 25px;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $stroke;
 
-  @media (min-width: $tablet-width) {
-    border-top: none;
-  }
-
-  @media (min-width: $tablet-width) {
+  @include tablet {
     flex-direction: column;
     min-height: 511px;
     margin-bottom: 67px;
     padding: 0;
     background: linear-gradient(to top, #f2f2f2 85%, white 15%);
+    border-top: none;
 
     &::before {
       width: 0;
@@ -62,16 +59,16 @@
 
 .catalog__item:last-child {
   padding-bottom: 25px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $stroke;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     padding-bottom: 40px;
     border-bottom: 0;
   }
 }
 
 .catalog__item--link {
-  @media (min-width: $tablet-width) {
+  @include tablet {
     position: relative;
     justify-content: end;
     background: none;
@@ -83,7 +80,7 @@
       left: 0;
       width: 100%;
       height: 429px;
-      border: 1px solid #d3d3d3;
+      border: 1px solid $grey;
     }
   }
 
@@ -103,7 +100,14 @@
       top: 0;
       width: 30px;
       height: 30px;
-      background-image: url("../svg/catalog-link/plus.svg");
+      background-image: url("../svg/catalog-link/plus-small.svg");
+
+      @include tablet {
+        width: 60px;
+        height: 60px;
+        background-image: url("../svg/catalog-link/plus-big.svg");
+        transform: translateY(-106px);
+      }
     }
   }
 
@@ -119,23 +123,13 @@
     font-size: 12px;
     line-height: 16px;
     text-align: center;
-    color: #444444;
+    color: $special_dark-grey;
 
-    @media (min-width: $tablet-width) {
+    @include tablet {
       max-width: 167px;
       padding-bottom: 87px;
       font-size: 16px;
       line-height: 18px;
     }
-  }
-}
-
-.test {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: minmax(100px, 896px) minmax(100px, 245px);
-    grid-column-gap: 79px;
-    min-height: 288px;
-    width: 100%;
   }
 }

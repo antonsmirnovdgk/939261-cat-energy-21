@@ -1,0 +1,22 @@
+.fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 22px;
+  border: none;
+
+  @include tablet {
+    margin-bottom: 72px;
+  }
+
+  @include desktop {
+    margin-bottom: 69px;
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      max-width: 46%;
+    }
+  }
+}

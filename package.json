@@ -19,7 +19,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp",
     "start": "gulp"
   },
   "browserslist": [
@@ -37,5 +37,15 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-terser": "^2.0.1",
+    "gulp-webp": "^4.0.1"
   }
 }

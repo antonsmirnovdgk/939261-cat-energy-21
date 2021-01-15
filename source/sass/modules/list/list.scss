@@ -1,0 +1,32 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include list-reset;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 13px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+@include desktop {
+  .list--desktop {
+    flex-direction: column;
+    min-height: 196px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
