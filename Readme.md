@@ -60,3 +60,4 @@ git clone SSH-адрес_вашего_форка
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/939261-cat-energy-21?type=dev
 
 .
+.
