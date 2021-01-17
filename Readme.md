@@ -58,3 +58,5 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.com/htmlacademy-adaptive/939261-cat-energy-21
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/939261-cat-energy-21/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/939261-cat-energy-21?type=dev
+
+.
