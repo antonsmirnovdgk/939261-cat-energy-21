@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
   </head>
   <body class="page-body">
     <svg style="display: none">
@@ -82,9 +85,7 @@
               <a class="main-nav__link" href="#">главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html"
-                >каталог продукции</a
-              >
+              <a class="main-nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">подбор программы</a>
@@ -100,26 +101,12 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source
-              media="(min-width: 1220px)"
-              srcset="
-                img/promo/product-desk.png    1x,
-                img/promo/product-desk-2x.png 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                img/promo/product-tab.png    1x,
-                img/promo/product-tab-2x.png 2x
-              "
-            />
-            <img
-              class="promo__img"
-              src="img/promo/product-mob.png"
-              srcset="img/promo/product-mob-2x.png 2x"
-              alt="cat-energy курица"
-            />
+            <source type="image/webp" media="(min-width: 1220px)" srcset="img/promo/product-desk.webp 1x, img/promo/product-desk-2x.webp 2x"/>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/promo/tab.webp 1x, img/promo/tab@2x.webp 2x"/>
+            <source type="image/webp" srcset="img/promo/product-mob.webp 1x, img/promo/product-mob-2x.webp 2x"/>
+            <source media="(min-width: 1220px)" srcset="img/promo/product-desk.png  1x, img/promo/product-desk-2x.png 2x"/>
+            <source media="(min-width: 768px)" srcset="img/promo/tab.png 1x, img/promo/tab@2x.png 2x"/>
+            <img class="promo__img" src="img/promo/product-mob.png" srcset="img/promo/product-mob-2x.png 2x" width="280" height="270" alt="cat-energy курица"/>
           </picture>
           <a class="button button--promo" href="#">Подобрать программу</a>
         </div>
@@ -135,7 +122,7 @@
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="features__link" href="#">Каталог SLIM</a>
+              <a class="features__link" href="catalog.html">Каталог SLIM</a>
             </article>
             <article class="features__item features__item--second">
               <h3 class="features__title features__title--second">
@@ -145,7 +132,7 @@
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="features__link" href="#">Каталог PRO</a>
+              <a class="features__link" href="catalog.html">Каталог PRO</a>
             </article>
           </div>
         </div>
@@ -221,12 +208,7 @@
                       img/slider/before/desk/before@2x.png 2x
                     "
                   />
-                  <img
-                    class="example__before-img"
-                    src="img/slider/before/mobile/before.png"
-                    srcset="img/slider/before/mobile/before@2x.png 2x"
-                    alt="Кот до"
-                  />
+                  <img nclass="example__before-img" src="img/slider/before/mobile/before.png" srcset="img/slider/before/mobile/before@2x.png 2x" width="311" height="232" alt="Кот до"/>
                 </picture>
               </div>
               <div class="example__after">
@@ -245,12 +227,7 @@
                       img/slider/after/desk/after@2x.png 2x
                     "
                   />
-                  <img
-                    class="example__after-img"
-                    src="img/slider/after/mobile/after.png"
-                    srcset="img/slider/after/mobile/after@2x.png 2x"
-                    alt="Кот после"
-                  />
+                  <img class="example__after-img" src="img/slider/after/mobile/after.png" srcset="img/slider/after/mobile/after@2x.png 2x" width="251" height="240" alt="Кот после"/>
                 </picture>
               </div>
             </div>
@@ -280,74 +257,60 @@
             <source
               type="image/webp"
               media="(min-width: 1220px)"
-              srcset="img/map/desk/desk.webp 1, img/map/desk/desk@2x.webp 2"
+              srcset="img/map/desk/desk.webp 1x, img/map/desk/desk@2x.webp 2x"
             />
             <source
               type="image/webp"
               media="(min-width: 768px)"
-              srcset="img/map/tablet/tab.webp 1, img/map/tablet/tab@2x.webp 2"
+              srcset="img/map/tablet/tab.webp 1x, img/map/tablet/tab@2x.webp 2x"
             />
             <source
               type="image/webp"
-              srcset="img/map/mob/mob.webp 1, img/map/mob/mob@2x.webp 2"
+              srcset="img/map/mob/mob.webp 1x, img/map/mob/mob@2x.webp 2x"
             />
             <source
               media="(min-width: 1220px)"
-              srcset="img/map/desk/desk.png 1, img/map/desk/desk@2x.png 2"
+              srcset="img/map/desk/desk.jpg 1x, img/map/desk/desk@2x.jpg 2x"
             />
             <source
               media="(min-width: 768px)"
-              srcset="img/map/tablet/tab.png 1, img/map/tablet/tab@2x.png 2"
+              srcset="img/map/tablet/tab.jpg 1x, img/map/tablet/tab@2x.jpg 2x"
             />
-            <img
-              class="map__img"
-              src="img/map/mob/mob.png"
-              srcset="img/map/mob/mob@2x.png 2"
-              alt="Карта"
-            />
+            <img class="map__img" src="img/map/mob/mob.jpg" srcset="img/map/mob/mob@2x.jpg 2x" width="320" height="360" alt="Карта"/>
           </picture>
         </div>
-        <!-- <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.214070321069!2
-            d30.32135800976628!3d59.93866259150999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc
-            1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0Y
-            PRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606330312828!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-        </iframe> -->
         <div class="iframe" id="map"></div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container page-footer__container">
         <a class="page-footer__link" href="#">
-          <img
-            class="page-footer__logo"
-            src="svg/footer/catenergy-logo.svg"
-            alt="Лого"
-          />
+          <img class="page-footer__logo" src="svg/nav/cat-energy/cat-energy.svg" width="128" height="24" alt="Лого"/>
         </a>
         <ul class="page-footer__social">
           <li class="page-footer__item">
-            <a class="page-footer__link-vk" href="#">
-              <svg class="page-footer__link-vk" width="23" height="16">
+            <a class="page-footer__s" href="#">
+              <svg class="page-footer__icon page-footer__icon--vk" width="23" height="16">
                 <use xlink:href="#vk"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item">
-            <a class="page-footer__link-instagram" href="#">
-              <svg class="page-footer__link-instagram" width="16" height="16">
+            <a class="page-footer__s" href="#">
+              <svg class="page-footer__icon page-footer__icon--instagram" width="16" height="16">
                 <use xlink:href="#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item">
-            <a class="page-footer__link-facebook" href="#">
-              <svg class="page-footer__link-facebook" width="22" height="22">
+            <a class="page-footer__s" href="#">
+              <svg class="page-footer__icon page-footer__icon--facebook" width="22" height="22">
                 <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <div class="page-footer__icon">
+        <div class="page-footer__i">
           <a
             class="page-footer__copyright"
             href="https://echo.htmlacademy.ru"
@@ -362,7 +325,7 @@
       </div>
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=a2e16e58-0f00-4485-8d5c-c3f51931b823&lang=ru_RU"></script>
-    <script src="js/map/map.js"></script>
+    <!-- <script src="js/map/map.js"></script> -->
     <script src="js/menu.js"></script>
   </body>
 </html>

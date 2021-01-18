@@ -1,6 +1,7 @@
 .example {
   position: relative;
   background-color: #f2f2f2;
+  // overflow: hidden;
 
   @include tablet {
     background-color: #ffffff;

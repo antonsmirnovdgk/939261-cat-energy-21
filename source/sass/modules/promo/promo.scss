@@ -24,13 +24,13 @@
     top: 0;
     height: 302px;
     width: 100%;
-    background: $gradient, url("../img/promo/catmobile.png");
+    background: $gradient, url("../img/promo/catmobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     @include retina {
-      background: $gradient, url("../img/promo/catmobile-2x.png");
+      background: $gradient, url("../img/promo/catmobile-2x.jpg");
       background-size: cover;
     }
 

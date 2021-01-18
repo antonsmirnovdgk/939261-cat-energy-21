@@ -13,7 +13,7 @@ input[type="text"]:hover {
   border-color: $grey;
 }
 
-input[type="text"]:invalid {
+input[type="text"]:required {
   border-color: $status_error;
 }
 

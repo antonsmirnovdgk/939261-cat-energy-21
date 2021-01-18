@@ -22,8 +22,7 @@
   align-items: center;
   min-width: 130px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   list-style: none;
 
   @media (max-width: $mobile-width) {
@@ -32,7 +31,7 @@
   }
 }
 
-.page-footer__icon {
+.page-footer__i {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,9 +74,7 @@
   }
 }
 
-.page-footer__link-vk,
-.page-footer__link-instagram,
-.page-footer__link-facebook {
+.page-footer__icon {
   fill: #666666;
 
   &:hover {
@@ -86,6 +83,35 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.page-footer__s {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__icon--vk {
+  width: 23px;
+  height: 16px;
+
+  @include tablet {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.page-footer__icon--instagram {
+  width: 16px;
+  height: 16px;
+
+  @include tablet {
+    width: 23px;
+    height: 23px;
   }
 }
 
