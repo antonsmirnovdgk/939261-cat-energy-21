@@ -1,7 +1,7 @@
 .example {
   position: relative;
   background-color: #f2f2f2;
-  // overflow: hidden;
+  overflow: hidden;
 
   @include tablet {
     background-color: #ffffff;
@@ -265,12 +265,14 @@
   @include desktop {
     &::after {
       content: "";
+      content: "";
       position: absolute;
       z-index: -1;
-      top: 129px;
+      top: 122px;
       width: 100vw;
-      height: 100%;
-      background: linear-gradient(to top, #ebebeb 87%, white 15%);
+      height: 103%;
+      background: linear-gradient(to top, #ebebeb 87%, #fff 15%);
+      left: 283px;
     }
   }
 }

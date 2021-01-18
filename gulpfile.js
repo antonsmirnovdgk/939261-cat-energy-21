@@ -103,9 +103,9 @@ exports.js = js;
 //Webp
 
 const createWebp = () => {
-  return gulp.src("source/img/*.{jpg, png}")
+  return gulp.src("build/img/**/*.{jpg,png}")
   .pipe(gulpWebp({quality: 90}))
-  .pipe(gulp.dest("source/img"))
+  .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
@@ -144,5 +144,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  clean, createWebp, copy, html, styles, js, images, sprite, server, watcher
+  clean, copy, html, styles, js, images, sprite, createWebp, server, watcher
 );

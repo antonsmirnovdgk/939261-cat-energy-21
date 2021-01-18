@@ -193,28 +193,18 @@
             <div class="example__img slider-container">
               <div class="example__before">
                 <picture>
-                  <!-- <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      img/slider/before/desk/before.webp    1x,
-                      img/slider/before/desk/before@2x.webp 2x
-                    "
-                  /> -->
                   <source
                     media="(min-width: 768px)"
-                    srcset="
-                      img/slider/before/desk/before.png    1x,
-                      img/slider/before/desk/before@2x.png 2x
-                    "
-                  />
-                  <img nclass="example__before-img" src="img/slider/before/mobile/before.png" srcset="img/slider/before/mobile/before@2x.png 2x" width="311" height="232" alt="Кот до"/>
+                    srcset="img/slider/before/desk/before.webp  1x, img/slider/before/desk/before@2x.webp 2x"/>
+                  <source media="(min-width: 768px)" srcset="img/slider/before/desk/before.png   1x, img/slider/before/desk/before@2x.png 2x"/>
+                  <img class="example__before-img" src="img/slider/before/mobile/before.png" srcset="img/slider/before/mobile/before@2x.png 2x" width="311" height="232" alt="Кот до"/>
                 </picture>
               </div>
               <div class="example__after">
                 <picture>
-                  <!-- <source
+                  <source
                     media="(min-width: 768px)" srcset="img/slider/after/desk/after.webp   1x, img/slider/after/desk/after@2x.webp 2x"
-                  /> -->
+                  />
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -252,26 +242,26 @@
             <source
               type="image/webp"
               media="(min-width: 1220px)"
-              srcset="img/map/desk/desk.webp 1x, img/map/desk/desk@2x.webp 2x"
+              srcset="img/map/desk.webp 1x, img/map/desk@2x.webp 2x"
             />
             <source
               type="image/webp"
               media="(min-width: 768px)"
-              srcset="img/map/tablet/tab.webp 1x, img/map/tablet/tab@2x.webp 2x"
+              srcset="img/map/tab.webp 1x, img/map/tab@2x.webp 2x"
             />
             <source
               type="image/webp"
-              srcset="img/map/mob/mob.webp 1x, img/map/mob/mob@2x.webp 2x"
+              srcset="img/map/mob.webp 1x, img/map/mob@2x.webp 2x"
             />
             <source
               media="(min-width: 1220px)"
-              srcset="img/map/desk/desk.jpg 1x, img/map/desk/desk@2x.jpg 2x"
+              srcset="img/map/desk.jpg 1x, img/map/desk@2x.jpg 2x"
             />
             <source
               media="(min-width: 768px)"
-              srcset="img/map/tablet/tab.jpg 1x, img/map/tablet/tab@2x.jpg 2x"
+              srcset="img/map/tab.jpg 1x, img/map/tab@2x.jpg 2x"
             />
-            <img class="map__img" src="img/map/mob/mob.jpg" srcset="img/map/mob/mob@2x.jpg 2x" width="320" height="360" alt="Карта"/>
+            <img class="map__img" src="img/map/mob.jpg" srcset="img/map/mob@2x.jpg 2x" width="320" height="360" alt="Карта"/>
           </picture>
         </div>
         <div class="iframe" id="map"></div>

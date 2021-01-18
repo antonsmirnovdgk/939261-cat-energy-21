@@ -1,6 +1,7 @@
 .map {
   position: relative;
   min-height: 476px;
+  overflow: hidden;
 
   @include tablet {
     min-height: 600px;

@@ -115,6 +115,16 @@
   }
 }
 
+.page-footer__icon--facebook {
+  width: 16px;
+  height: 16px;
+
+  @include tablet {
+    width: 23px;
+    height: 23px;
+  }
+}
+
 .page-footer__icon-academy {
   fill: $spacial-grey;
 }
