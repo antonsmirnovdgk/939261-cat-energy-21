@@ -10,7 +10,7 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const terser = require("gulp-terser");
-const webp = require("gulp-webp");
+const gulpWebp = require("gulp-webp");
 const htmlmin = require("gulp-htmlmin");
 const svgstore = require("gulp-svgstore");
 
@@ -25,13 +25,13 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename({
       suffix:".min"
     }))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -41,11 +41,11 @@ exports.styles = styles;
 
 const images = () => {
   return gulp.src("source/img/**/*")
-  .pipe(imagemin([
-    imagemin.mozjpeg({quality: 75, progressive: true}),
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.svgo()
-  ]))
+  // .pipe(imagemin([
+  //   imagemin.mozjpeg({quality: 75, progressive: true}),
+  //   imagemin.optipng({optimizationLevel: 3}),
+  //   imagemin.svgo()
+  // ]))
   .pipe(gulp.dest("build/img"))
 }
 
@@ -56,7 +56,7 @@ exports.images = images;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -103,9 +103,9 @@ exports.js = js;
 //Webp
 
 const createWebp = () => {
-  return gulp.src("build/img/**/*.{jpg, png}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"))
+  return gulp.src("source/img/*.{jpg, png}")
+  .pipe(gulpWebp({quality: 90}))
+  .pipe(gulp.dest("source/img"))
 }
 
 exports.createWebp = createWebp;
@@ -144,5 +144,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  clean, copy, html, styles, js, images, sprite, createWebp, server, watcher
+  clean, createWebp, copy, html, styles, js, images, sprite, server, watcher
 );

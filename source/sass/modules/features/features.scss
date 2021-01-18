@@ -71,7 +71,7 @@
     top: 22px;
     width: 36px;
     height: 50px;
-    background-image: url("../svg/features/firstcat.svg");
+    background-image: url("../img/svg/features/firstcat.svg");
     background-repeat: no-repeat;
 
     @include tablet {
@@ -80,7 +80,7 @@
       top: 70px;
       right: 92px;
       margin-left: auto;
-      background-image: url("../svg/features/tabletfirst.svg");
+      background-image: url("../img/svg/features/tabletfirst.svg");
     }
 
     @include desktop {
@@ -90,7 +90,7 @@
       right: 0;
       left: 67px;
       margin-left: 0;
-      background-image: url("../svg/features/desktopfirst.svg");
+      background-image: url("../img/svg/features/desktopfirst.svg");
     }
   }
 
@@ -99,7 +99,7 @@
     top: 34px;
     width: 67px;
     height: 28px;
-    background-image: url("../svg/features/secondcat.svg");
+    background-image: url("../img/svg/features/secondcat.svg");
     background-repeat: no-repeat;
 
     @include tablet {
@@ -108,7 +108,7 @@
       top: 127px;
       right: 27px;
       margin-left: auto;
-      background-image: url("../svg/features/tabletsecond.svg");
+      background-image: url("../img/svg/features/tabletsecond.svg");
     }
 
     @include desktop {
@@ -118,7 +118,7 @@
       left: 33px;
       right: 0;
       margin-left: 0;
-      background-image: url("../svg/features/desktopsecond.svg");
+      background-image: url("../img/svg/features/desktopsecond.svg");
     }
   }
 
@@ -235,7 +235,7 @@
   width: 32px;
   height: 10px;
   top: 20px;
-  background-image: url("../svg/features/arrow.svg");
+  background-image: url("../img/svg/features/arrow.svg");
 
   @include tablet {
     top: 23px;
@@ -243,5 +243,5 @@
 }
 
 .features__link:hover::before {
-  background-image: url("../svg/features/arrow-hover.svg");
+  background-image: url("../img/svg/features/arrow-hover.svg");
 }

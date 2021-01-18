@@ -6,7 +6,6 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/style.min.css"/>
   </head>
   <body class="page-body">
@@ -46,15 +45,15 @@
             <picture>
               <source
                 media="(min-width: 1220px)"
-                srcset="svg/nav/desktop/logo-desktop.svg"
+                srcset="img/svg/nav/desktop/logo-desktop.svg"
               />
               <source
                 media="(min-width: 768px)"
-                srcset="svg/nav/tablet/logo-tablet.svg"
+                srcset="img/svg/nav/tablet/logo-tablet.svg"
               />
               <img
                 class="page-header__img"
-                src="svg/nav/mobile/logo-mobile.svg"
+                src="simg/vg/nav/mobile/logo-mobile.svg"
                 alt="Логотип магазина"
                 width="34"
                 height="38"
@@ -65,7 +64,7 @@
             <picture>
               <img
                 class="page-header__logo-text"
-                src="svg/nav/cat-energy/cat-energy.svg"
+                src="img/svg/nav/cat-energy/cat-energy.svg"
                 alt="Кэт энерджи"
                 width="101"
                 height="18"
@@ -194,13 +193,13 @@
             <div class="example__img slider-container">
               <div class="example__before">
                 <picture>
-                  <source
+                  <!-- <source
                     media="(min-width: 768px)"
                     srcset="
                       img/slider/before/desk/before.webp    1x,
                       img/slider/before/desk/before@2x.webp 2x
                     "
-                  />
+                  /> -->
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -213,13 +212,9 @@
               </div>
               <div class="example__after">
                 <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      img/slider/after/desk/after.webp    1x,
-                      img/slider/after/desk/after@2x.webp 2x
-                    "
-                  />
+                  <!-- <source
+                    media="(min-width: 768px)" srcset="img/slider/after/desk/after.webp   1x, img/slider/after/desk/after@2x.webp 2x"
+                  /> -->
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -285,7 +280,7 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <a class="page-footer__link" href="#">
-          <img class="page-footer__logo" src="svg/nav/cat-energy/cat-energy.svg" width="128" height="24" alt="Лого"/>
+          <img class="page-footer__logo" src="img/svg/nav/cat-energy/cat-energy.svg" width="128" height="24" alt="Лого"/>
         </a>
         <ul class="page-footer__social">
           <li class="page-footer__item">
@@ -325,7 +320,7 @@
       </div>
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=a2e16e58-0f00-4485-8d5c-c3f51931b823&lang=ru_RU"></script>
-    <!-- <script src="js/map/map.js"></script> -->
-    <script src="js/menu.js"></script>
+    <script src="js/map/map.min.js"></script>
+    <script src="js/menu.min.js"></script>
   </body>
 </html>
