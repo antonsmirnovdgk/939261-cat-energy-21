@@ -6,10 +6,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
+    padding-left: 21px;
+    padding-right: 21px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -22,8 +26,9 @@
   color: $blackcolor;
 
   @media (min-width: $tablet-width) {
-    max-width: 323px;
+    max-width: 343px;
     margin-bottom: 66px;
+    padding-left: 21px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -73,11 +78,13 @@
 .form-contact__item-phone,
 .form-contact__item-email {
   position: absolute;
-  right: 0;
-  fill: $blackcolor;
-  outline: 1px solid red;
+  right: 15px;
+  fill: #ffffff;
 }
 
 .form-contact__item-email {
-  stroke: #222222;
+  @include tablet {
+    width: 18px;
+    height: 13px;
+  }
 }

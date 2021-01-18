@@ -10,7 +10,6 @@
 
   @include tablet {
     margin-bottom: 76px;
-    padding-left: 38px;
     font-size: 36px;
     line-height: 36px;
 
@@ -78,6 +77,20 @@
   @include tablet {
     top: 18px;
     margin-left: 36px;
+  }
+}
+
+@include tablet {
+  .title--contact::before {
+    right: 548px;
+  }
+
+  .title--comment::before {
+    right: 217px;
+  }
+
+  .title--extra::before {
+    right: 248px;
   }
 }
 

@@ -35,3 +35,9 @@ input[type="text"]:required {
     color: $special_dark-grey;
   }
 }
+
+.input {
+  .form-contact__item-email {
+    stroke: $basic-green;
+  }
+}
