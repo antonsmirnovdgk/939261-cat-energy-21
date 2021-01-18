@@ -265,13 +265,12 @@
   @include desktop {
     &::after {
       content: "";
-      content: "";
       position: absolute;
       z-index: -1;
       top: 122px;
       width: 100vw;
       height: 103%;
-      background: linear-gradient(to top, #ebebeb 87%, #fff 15%);
+      background: linear-gradient(to top, #ebebeb 87%, #ffffff 15%);
       left: 283px;
     }
   }

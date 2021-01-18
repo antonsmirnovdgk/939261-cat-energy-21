@@ -6,8 +6,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
-    padding-left: 21px;
-    padding-right: 21px;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,17 +25,21 @@
   text-transform: uppercase;
   color: $blackcolor;
 
-  @media (min-width: $tablet-width) {
-    max-width: 343px;
+  @include tablet {
+    max-width: 365px;
     margin-bottom: 66px;
-    padding-left: 21px;
+    padding-left: 41px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @include desktop {
+    padding-left: 0;
   }
 }
 
 .form-contact__item {
-  @media (min-width: $desktop-width) {
+  @include desktop {
     max-width: 46%;
   }
 }
@@ -46,12 +50,12 @@
   flex-wrap: wrap;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     width: 50%;
     margin-bottom: 32px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     width: auto;
   }
 }

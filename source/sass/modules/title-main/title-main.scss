@@ -7,9 +7,13 @@
 
   @include tablet {
     padding-top: 64px;
-    padding-left: 21px;
+    padding-left: 41px;
     margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @include desktop {
+    padding-left: 0;
   }
 }

@@ -77,12 +77,24 @@
 .page-footer__icon {
   fill: #666666;
 
-  &:hover {
-    fill: $basic-green;
-  }
-
   &:active {
     opacity: 0.3;
+  }
+}
+
+.page-footer__icon--facebook {
+  width: 16px;
+  height: 16px;
+  stroke: $spacial-grey;
+  fill: none;
+
+  @include tablet {
+    width: 23px;
+    height: 26px;
+  }
+
+  &:hover {
+    stroke: $basic-green;
   }
 }
 
@@ -103,6 +115,10 @@
     width: 30px;
     height: 22px;
   }
+
+  &:hover {
+    fill: $basic-green;
+  }
 }
 
 .page-footer__icon--instagram {
@@ -113,15 +129,9 @@
     width: 23px;
     height: 23px;
   }
-}
 
-.page-footer__icon--facebook {
-  width: 16px;
-  height: 16px;
-
-  @include tablet {
-    width: 23px;
-    height: 26px;
+  &:hover {
+    fill: $basic-green;
   }
 }
 
