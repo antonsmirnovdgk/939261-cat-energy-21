@@ -14,14 +14,24 @@ input[type="text"] {
 
 input[type="text"]:focus {
   border-color: $special_dark-grey;
+
+  & + .form-contact__item-email,
+  & + .form-contact__item-phone {
+    stroke: $basic-green;
+  }
 }
 
 input[type="text"]:hover {
   border-color: $grey;
 }
 
-input[type="text"]:required {
+input[type="text"]:invalid {
   border-color: $status_error;
+
+  & + .form-contact__item-email,
+  & + .form-contact__item-phone {
+    stroke: $status_error;
+  }
 }
 
 .input {
