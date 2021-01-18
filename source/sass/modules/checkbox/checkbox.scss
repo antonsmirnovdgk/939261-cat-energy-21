@@ -26,12 +26,12 @@
 }
 
 .checkbox + label:hover::before {
-  background-image: url("../../svg/checkbox/checkbox-checked.svg");
+  background-image: url("../img/svg/checkbox/checkbox-checked.svg");
 }
 
 .checkbox:checked + label::before {
   border: 1px solid $grey;
-  background-image: url("../../svg/checkbox/checkbox-checked.svg");
+  background-image: url("../img/svg/checkbox/checkbox-checked.svg");
 }
 
 .checkbox:disabled + label::before {

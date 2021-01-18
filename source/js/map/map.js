@@ -1,5 +1,5 @@
 let mapone = document.querySelector('#map');
-let markerImage = "img/map/icon/mappin.png"
+let markerImage = "img/map/mappin.png"
 let coordinates = [59.938635, 30.323118]
 
 ymaps.ready(() => {

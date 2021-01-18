@@ -1,4 +1,11 @@
 input[type="text"] {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
   width: 100%;
   padding: 13px 15px 13px 15px;
   margin-left: 14px;

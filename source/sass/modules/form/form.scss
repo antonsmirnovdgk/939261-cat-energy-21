@@ -69,3 +69,15 @@
     line-height: 16px;
   }
 }
+
+.form-contact__item-phone,
+.form-contact__item-email {
+  position: absolute;
+  right: 0;
+  fill: $blackcolor;
+  outline: 1px solid red;
+}
+
+.form-contact__item-email {
+  stroke: #222222;
+}

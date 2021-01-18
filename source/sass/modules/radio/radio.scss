@@ -18,7 +18,7 @@
     bottom: 5px;
     width: 30px;
     height: 30px;
-    background-image: url("../../svg/radio/radio.svg");
+    background-image: url("../img/svg/radio/radio.svg");
     cursor: pointer;
 
     @include tablet {
@@ -27,7 +27,7 @@
   }
 
   & + label:hover::before {
-    background-image: url("../../svg/radio/radio-checked.svg");
+    background-image: url("../img/svg/radio/radio-checked.svg");
   }
 
   &:checked + label::before {
@@ -37,7 +37,7 @@
     bottom: 5px;
     width: 30px;
     height: 30px;
-    background-image: url("../../svg/radio/radio-checked.svg");
+    background-image: url("../img/svg/radio/radio-checked.svg");
   }
 }
 

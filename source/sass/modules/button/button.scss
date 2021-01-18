@@ -1,6 +1,7 @@
 .button {
   @include size(100%, 40px);
   padding: 9px 0;
+  font: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

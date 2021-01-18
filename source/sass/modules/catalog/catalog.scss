@@ -100,12 +100,12 @@
       top: 0;
       width: 30px;
       height: 30px;
-      background-image: url("../svg/catalog-link/plus-small.svg");
+      background-image: url("../img/svg/catalog-link/plus-small.svg");
 
       @include tablet {
         width: 60px;
         height: 60px;
-        background-image: url("../svg/catalog-link/plus-big.svg");
+        background-image: url("../img/svg/catalog-link/plus-big.svg");
         transform: translateY(-106px);
       }
     }

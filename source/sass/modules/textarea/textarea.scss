@@ -2,8 +2,16 @@
   width: 100%;
   min-height: 150px;
   padding: 10px 19px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
   border: 1px solid #e7e7e7;
   text-transform: uppercase;
+  resize: none;
 
   @include tablet {
     min-height: 174px;
@@ -15,6 +23,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
-    color: #444444;
+    color: $special_dark-grey;
   }
 }
