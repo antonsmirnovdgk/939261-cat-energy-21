@@ -31,9 +31,9 @@
   }
 }
 
-.page-footer__i {
+.page-footer__htmlacademy {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -142,7 +142,8 @@
 .page-footer__copyright {
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
+  min-width: 280px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -151,10 +152,15 @@
   text-decoration: none;
   color: $special_dark-grey;
 
-  @media (max-width: $mobile-width) {
-    justify-content: space-between;
-    width: 100%;
+  @include tablet {
+    justify-content: center;
+    min-width: auto;
   }
+
+  // @media (max-width: $mobile-width) {
+  //   justify-content: space-between;
+  //   width: 100%;
+  // }
 
   &:hover .page-footer__icon-academy {
     fill: $basic-green;

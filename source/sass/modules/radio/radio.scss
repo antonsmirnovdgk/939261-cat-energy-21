@@ -2,7 +2,7 @@
   appearance: none;
 
   & + label {
-    margin-left: 60px;
+    margin-left: 50px;
     margin-bottom: 13px;
 
     @include tablet {
@@ -40,9 +40,3 @@
     background-image: url("../img/svg/radio/radio-checked.svg");
   }
 }
-
-// .radio + label::before {
-//   @include tablet {
-//     top: 0;
-//   }
-// }

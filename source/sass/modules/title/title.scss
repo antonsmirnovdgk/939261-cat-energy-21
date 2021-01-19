@@ -22,15 +22,10 @@
       height: 2px;
       right: 0;
       background-color: #68b738;
-
-      @media (min-width: $desktop-width) {
-        // margin-right: 40px;
-      }
     }
   }
 
   @media (min-width: $desktop-width) {
-    // width: 100%;
     padding-left: 0;
   }
 
@@ -55,6 +50,16 @@
 
   @include tablet {
     max-width: 100%;
+  }
+}
+
+.title--catalog {
+  @include tablet {
+    padding-left: 55px;
+  }
+
+  @include desktop {
+    padding-left: 0;
   }
 }
 

@@ -44,6 +44,10 @@
   display: none;
 }
 
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 25px;

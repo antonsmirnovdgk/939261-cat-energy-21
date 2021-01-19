@@ -83,13 +83,11 @@
 .form-contact__item-email {
   position: absolute;
   right: 15px;
-
+  stroke: #222222;
   fill: none;
 }
 
 .form-contact__item-email {
-  stroke: #222222;
-
   @include tablet {
     width: 18px;
     height: 13px;

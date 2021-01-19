@@ -89,7 +89,7 @@
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" name="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -114,21 +114,21 @@
             <fieldset class="form-name fieldset fieldset--desktop">
               <ul class="form-name__list list list--desktop" role="none">
                 <li class="form-name__item list__item">
-                  <label class="label label--name" for="field-name">Имя:<sup>*</sup></label>
+                  <label class="label" for="field-name">Имя:<sup>*</sup></label>
                   <input class="input" id="field-name" type="text" placeholder="Барсик" name="name">
                 </li>
                 <li class="form-name__item list__item">
-                  <label class="label label--weight" for="field-weight">Вес (КГ):<sup>*</sup></label>
+                  <label class="label" for="field-weight">Вес (КГ):<sup>*</sup></label>
                   <input class="input" id="field-weight" type="text" placeholder="7" name="weight">
                 </li>
                 <li class="form-name__item list__item">
-                  <label class="label label--age" for="field-age">Возвраст (ЛЕТ):</label>
+                  <label class="label" for="field-age">Возвраст (ЛЕТ):</label>
                   <input class="input" id="field-age" type="text" placeholder="7" name="age">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-programm fieldset fieldset--desktop">
-              <ul class="form-programm__list list list--desktop">
+              <ul class="form-programm__list list list--desktop list--mob">
                 <li class="form-programm__item list__item">
                   <input class="radio input" id="low-weight" type="radio" name="radio" checked>
                   <label class="label" for="low-weight">Похудение</label>
@@ -182,7 +182,7 @@
                   <label class="label label--checkbox" for="extra-three">молоко</label>
                 </li>
                 <li class="form-extra__item list__item">
-                  <input class="input checkbox" id="extra-four" type="checkbox" name="vitamins" disabled>
+                  <input class="input checkbox" id="extra-four" type="checkbox" name="vitamins">
                   <label class="label label--checkbox" for="extra-four">витамины</label>
                 </li>
               </ul>
@@ -242,15 +242,11 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__i">
-          <a
-            class="page-footer__copyright"
-            href="https://echo.htmlacademy.ru"
-            aria-label="HTML Academy"
-          >
+        <div class="page-footer__htmlacademy">
+          <a class="page-footer__copyright" href="https://echo.htmlacademy.ru" aria-label="HTML Academy">
             <span class="page-footer__copyright-text">HTML Academy</span>
             <svg class="page-footer__icon-academy" width="27" height="34">
-              <use xlink:href="https://echo.htmlacademy.ru"></use>
+              <use xlink:href="#academy"></use>
             </svg>
           </a>
         </div>

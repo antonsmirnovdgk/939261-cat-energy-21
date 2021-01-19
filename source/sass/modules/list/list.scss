@@ -30,3 +30,19 @@
     margin-bottom: 0;
   }
 }
+
+.list--mob {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px;
+  border-top: 1px solid $stroke;
+  border-bottom: 1px solid $stroke;
+
+  @include tablet {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    border-top: 0;
+    border-bottom: 0;
+  }
+}
