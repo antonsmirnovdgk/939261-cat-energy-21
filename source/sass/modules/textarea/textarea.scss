@@ -10,7 +10,7 @@
   text-transform: uppercase;
   color: $special_dark-grey;
   border: 1px solid #e7e7e7;
-  resize: horizontal;
+  resize: vertical;
 
   @include tablet {
     min-height: 174px;

@@ -11,7 +11,7 @@
   }
 }
 
-.extra-wrapper {
+.extra__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: minmax(100px, 896px) minmax(100px, 245px);
@@ -102,7 +102,7 @@
   }
 }
 
-.extra-gift {
+.extra__gift {
   display: flex;
   position: relative;
   width: 100%;
@@ -120,6 +120,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: $basic-green;
+
+    @include retina() {
+      background-image: url("../img/catalog/gift/gift-m@2x.png");
+    }
   }
 
   @include tablet {

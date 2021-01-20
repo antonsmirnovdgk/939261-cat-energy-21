@@ -13,8 +13,12 @@
 }
 
 .map__container {
+  position: relative;
   max-width: 1220px;
-  padding: 0;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .map__wrapper {

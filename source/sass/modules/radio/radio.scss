@@ -1,5 +1,6 @@
 .radio {
   appearance: none;
+  cursor: pointer;
 
   & + label {
     margin-left: 50px;
@@ -26,10 +27,6 @@
     }
   }
 
-  & + label:hover::before {
-    background-image: url("../img/svg/radio/radio-checked.svg");
-  }
-
   &:checked + label::before {
     content: " ";
     position: absolute;
@@ -38,5 +35,6 @@
     width: 30px;
     height: 30px;
     background-image: url("../img/svg/radio/radio-checked.svg");
+    cursor: pointer;
   }
 }
