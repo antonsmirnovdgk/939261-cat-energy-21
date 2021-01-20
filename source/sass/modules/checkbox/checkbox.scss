@@ -7,24 +7,6 @@
   }
 }
 
-// // .checkbox + label::before,
-// // .checkbox:checked + label::before,
-// // .checkbox:disabled + label::before {
-// //   content: " ";
-// //   position: absolute;
-// //   top: -5px;
-// //   left: 0;
-// //   bottom: 5px;
-// //   width: 30px;
-// //   height: 30px;
-// //   border: 1px solid #bababa;
-// //   cursor: pointer;
-
-// //   @include tablet {
-// //     top: 0;
-// //   }
-// }
-
 .checkbox + label::before {
   content: " ";
   position: absolute;
@@ -41,12 +23,7 @@
   }
 }
 
-.checkbox + label:hover::before {
-  background-image: url("../img/svg/checkbox/checkbox-checked.svg");
-}
-
 .checkbox:checked + label::before {
-  // border: 1px solid $grey;
   background-image: url("../img/svg/checkbox/checkbox-checked.svg");
 }
 
