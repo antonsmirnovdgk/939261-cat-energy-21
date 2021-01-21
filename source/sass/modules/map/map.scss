@@ -8,17 +8,18 @@
   }
 
   @include desktop {
-    min-height: 400px;
+    min-height: 390px;
   }
 }
 
 .map__container {
   position: relative;
   max-width: 1220px;
+  padding: 0;
 
-  @include desktop {
-    padding: 0;
-  }
+  // @include desktop {
+  //   padding: 0;
+  // }
 }
 
 .map__wrapper {
@@ -32,7 +33,7 @@
   background-color: #f2f2f2;
 
   @include tablet {
-    padding: 0 71px;
+    padding: 0 72px;
     min-height: 201px;
   }
 
@@ -40,6 +41,7 @@
     justify-content: space-around;
     max-width: 570px;
     max-height: 201px;
+    padding: 0 46px;
     background-color: #ffffff;
     transform: translateY(95px);
   }
@@ -56,14 +58,20 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #111111;
 
   @include tablet {
     max-width: 163px;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 25px;
+  }
+
+  @include desktop {
+    max-width: 177px;
+    font-size: 19px;
+    line-height: 23px;
   }
 }
 
@@ -83,12 +91,20 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .map__street {
   @include tablet {
     display: inline-block;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
+  }
+
+  @include desktop {
+    padding-top: 8px;
   }
 }
 

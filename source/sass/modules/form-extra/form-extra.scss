@@ -1,0 +1,25 @@
+.form-extra {
+  margin-bottom: 15px;
+}
+
+.form-extra__item {
+  @include tablet {
+    width: 43%;
+  }
+
+  @include desktop {
+    width: 19%;
+    margin-bottom: 40px;
+  }
+}
+
+.form-extra__item--two,
+.form-extra__item--four {
+  @include tablet {
+    margin-left: auto;
+  }
+
+  @include tablet {
+    margin-left: 0;
+  }
+}

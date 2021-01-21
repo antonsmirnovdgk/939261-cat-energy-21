@@ -1,3 +1,15 @@
+.catalog {
+  margin-bottom: 23px;
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
+
+  @include desktop {
+    margin-bottom: 18px;
+  }
+}
+
 .catalog__list {
   @include list-reset;
   margin: 0 -20px;
@@ -16,10 +28,16 @@
 }
 
 .catalog-title {
-  margin-bottom: 41px;
+  padding-top: 24px;
+  margin-bottom: 42px;
 
   @include tablet {
+    padding-top: 60px;
     margin-bottom: 83px;
+  }
+
+  @include desktop {
+    padding-top: 71px;
   }
 }
 
@@ -34,14 +52,14 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 190px;
-  margin-bottom: 25px;
+  min-height: 189px;
+  margin-bottom: 20px;
   border-top: 1px solid $stroke;
 
   @include tablet {
     flex-direction: column;
     min-height: 511px;
-    margin-bottom: 67px;
+    margin-bottom: 57px;
     padding: 0;
     background: linear-gradient(to top, #f2f2f2 85%, white 15%);
     border-top: none;
@@ -54,6 +72,10 @@
       padding-left: 35px;
       padding-right: 35px;
     }
+  }
+
+  @include desktop {
+    min-height: 515px;
   }
 }
 
@@ -83,13 +105,17 @@
     align-items: center;
     width: 100%;
     margin-bottom: 0;
-    margin-top: auto;
-    padding-top: 23px;
+    padding-top: 64px;
+
+    @include tablet {
+      margin-top: auto;
+      padding-top: 30px;
+    }
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 12px;
       width: 30px;
       height: 30px;
       background-image: url("../img/svg/catalog-link/plus-small.svg");
@@ -98,17 +124,27 @@
         width: 60px;
         height: 60px;
         background-image: url("../img/svg/catalog-link/plus-big.svg");
-        transform: translateY(-106px);
+        transform: translateY(-89px);
+      }
+
+      @include desktop {
+        transform: translateY(-94px);
       }
     }
   }
 
   .product__title {
     max-width: 100%;
+    margin-bottom: 6px;
+
+    @include tablet {
+      margin-bottom: 23px;
+    }
   }
 
   .product__text {
     min-width: 221px;
+    margin-bottom: 24px;
     font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -119,9 +155,13 @@
 
     @include tablet {
       max-width: 167px;
-      padding-bottom: 87px;
+      padding-bottom: 59px;
       font-size: 16px;
       line-height: 18px;
+    }
+
+    @include desktop {
+      padding-bottom: 64px;
     }
   }
 }

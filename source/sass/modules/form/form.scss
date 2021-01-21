@@ -38,12 +38,6 @@
   }
 }
 
-.form-contact__item {
-  @include desktop {
-    max-width: 46%;
-  }
-}
-
 .form-extra__item {
   position: relative;
   display: flex;
@@ -77,19 +71,8 @@
     font-size: 16px;
     line-height: 16px;
   }
-}
 
-.form-contact__item-phone,
-.form-contact__item-email {
-  position: absolute;
-  right: 15px;
-  stroke: #222222;
-  fill: none;
-}
-
-.form-contact__item-email {
-  @include tablet {
-    width: 18px;
-    height: 13px;
+  @include desktop {
+    margin-left: 51px;
   }
 }

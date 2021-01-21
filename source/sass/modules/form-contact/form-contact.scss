@@ -1,0 +1,33 @@
+.form-contact {
+  min-height: 191px;
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin-bottom: 47px;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.form-contact__item {
+  @include desktop {
+    max-width: 46%;
+  }
+}
+
+.form-contact__item-phone,
+.form-contact__item-email {
+  position: absolute;
+  right: 15px;
+  stroke: #222222;
+  fill: none;
+}
+
+.form-contact__item-email {
+  @include tablet {
+    width: 18px;
+    height: 13px;
+  }
+}

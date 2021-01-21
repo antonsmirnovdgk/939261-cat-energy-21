@@ -1,0 +1,12 @@
+.form-comment {
+  min-height: 214px;
+  margin-bottom: 11px;
+
+  @include tablet {
+    margin-bottom: 62px;
+  }
+
+  @include desktop {
+    margin-bottom: 67px;
+  }
+}

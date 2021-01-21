@@ -1,12 +1,8 @@
 .features {
-  margin-bottom: 27px;
+  margin-bottom: 5px;
 
   @include tablet {
-    margin-bottom: 45px;
-  }
-
-  @include desktop {
-    margin-bottom: 71px;
+    margin-bottom: 8px;
   }
 }
 
@@ -24,10 +20,11 @@
   min-height: 266px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   background-color: $greycolor;
 
   @include tablet {
+    margin-bottom: 31px;
     padding-right: 0;
     padding-left: 52px;
   }
@@ -42,8 +39,8 @@
 
   &--first::before,
   &--second::before {
-    left: 25px;
-    top: 25px;
+    left: 22px;
+    top: 21px;
     width: 50px;
     height: 50px;
     background-color: #68b738;
@@ -52,14 +49,14 @@
     @include tablet {
       width: 200px;
       height: 200px;
-      top: 81px;
-      right: 62px;
+      top: 86px;
+      right: 60px;
       margin-left: auto;
     }
 
     @include desktop {
       width: 100px;
-      height: 106px;
+      height: 100px;
       top: 41px;
       left: 52px;
       margin-left: 0;
@@ -67,8 +64,8 @@
   }
 
   &--first::after {
-    left: 31px;
-    top: 22px;
+    left: 29px;
+    top: 17px;
     width: 36px;
     height: 50px;
     background-image: url("../img/svg/features/firstcat.svg");
@@ -77,7 +74,7 @@
     @include tablet {
       width: 140px;
       height: 192px;
-      top: 70px;
+      top: 76px;
       right: 92px;
       margin-left: auto;
       background-image: url("../img/svg/features/tabletfirst.svg");
@@ -86,7 +83,7 @@
     @include desktop {
       width: 70px;
       height: 97px;
-      top: 41px;
+      top: 36px;
       right: 0;
       left: 67px;
       margin-left: 0;
@@ -95,8 +92,8 @@
   }
 
   &--second::after {
-    left: 14px;
-    top: 34px;
+    left: 13px;
+    top: 32px;
     width: 67px;
     height: 28px;
     background-image: url("../img/svg/features/secondcat.svg");
@@ -105,8 +102,8 @@
     @include tablet {
       width: 268px;
       height: 112px;
-      top: 127px;
-      right: 27px;
+      top: 129px;
+      right: 28px;
       margin-left: auto;
       background-image: url("../img/svg/features/tabletsecond.svg");
     }
@@ -114,7 +111,7 @@
     @include desktop {
       width: 134px;
       height: 56px;
-      top: 67px;
+      top: 62px;
       left: 33px;
       right: 0;
       margin-left: 0;
@@ -131,16 +128,10 @@
   }
 }
 
-.features__title--first {
-  padding-left: 69px;
-}
-
-.features__title--second {
-  padding-left: 78px;
-}
-
 .features__title--first,
 .features__title--second {
+  padding-left: 71px;
+
   @include tablet {
     padding-left: 0;
   }
@@ -149,7 +140,7 @@
 .features__title {
   display: inline-block;
   margin-bottom: 29px;
-  padding-top: 30px;
+  padding-top: 27px;
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
@@ -158,22 +149,21 @@
   color: $blackcolor;
 
   @include tablet {
-    margin-bottom: 24px;
-    padding-top: 77px;
+    margin-bottom: 27px;
+    padding-top: 72px;
     font-size: 36px;
-    line-height: 36px;
+    line-height: 34px;
   }
 
   @include desktop {
-    padding-left: 181px;
-    margin-bottom: 77px;
+    padding-left: 162px;
+    margin-bottom: 76px;
   }
 }
 
 .features__text {
-  min-width: 227px;
-  padding-bottom: 23px;
-  margin-bottom: 15px;
+  max-width: 227px;
+  margin-bottom: 38px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -181,21 +171,28 @@
   border-bottom: 1px solid #d9d9d9;
 
   @include tablet {
-    padding-bottom: 48px;
-    margin-bottom: 0;
+    max-width: 374px;
+    // padding-bottom: 48px;
+    margin-bottom: 51px;
+    padding-bottom: 0;
     border-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @include desktop {
+    max-width: 490px;
     min-height: 95px;
-    padding-bottom: 23px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 .features__item--first {
   .features__text {
     @include tablet {
-      max-width: 377px;
+      max-width: 374px;
     }
   }
 }
@@ -203,7 +200,16 @@
 .features__item--second {
   .features__text {
     @include tablet {
-      max-width: 342px;
+      max-width: 344px;
+    }
+  }
+}
+
+.features__item--first,
+.features__item--second {
+  .features__text {
+    @include desktop {
+      max-width: 490px;
     }
   }
 }
@@ -223,6 +229,7 @@
   }
 
   @include tablet {
+    padding-right: 60px;
     font-size: 20px;
     line-height: 30px;
   }

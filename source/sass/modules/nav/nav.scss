@@ -46,6 +46,10 @@
 
 .main-nav--nojs .main-nav__list {
   display: block;
+
+  @include tablet {
+    display: flex;
+  }
 }
 
 .main-nav__toggle {
@@ -92,7 +96,7 @@
   @media (min-width: $tablet-width) {
     min-height: 36px;
     margin: 0;
-    margin-right: 34px;
+    margin-right: 35px;
     border-top: 0;
 
     &:last-child {
@@ -116,25 +120,24 @@
 .main-nav__link {
   display: block;
   width: 100%;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 24px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
   color: $blackcolor;
 
   @media (min-width: $tablet-width) {
-    padding-top: 16px;
-    padding-bottom: 10px;
-    font-size: 18px;
-    line-height: 24px;
+    padding: 8px 0;
+    font-size: 17px;
+    line-height: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
   }
 }
@@ -148,8 +151,8 @@
 
   .main-nav__link {
     @media (min-width: $desktop-width) {
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 19px;
+      line-height: 28px;
       color: #ffffff;
     }
   }

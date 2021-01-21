@@ -1,5 +1,5 @@
 .title-main {
-  padding-top: 27px;
+  padding-top: 24px;
   margin-bottom: 37px;
   font-weight: normal;
   font-size: 36px;
@@ -12,8 +12,16 @@
     font-size: 60px;
     line-height: 60px;
   }
+}
 
-  // @include desktop {
-  //   padding-left: 0;
-  // }
+.title-main--form {
+  @include tablet {
+    padding-top: 60px;
+    padding-left: 40px;
+  }
+
+  @include desktop {
+    padding-top: 71px;
+    padding-left: 0;
+  }
 }

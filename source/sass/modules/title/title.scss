@@ -41,17 +41,30 @@
   }
 }
 
+.title--extra {
+  margin-bottom: 36px;
+
+  @include tablet {
+    margin-bottom: 59px;
+  }
+}
+
 .title--contact {
   max-width: 187px;
 
   @include tablet {
     max-width: 100%;
   }
+
+  @include desktop {
+    margin-bottom: 77px;
+  }
 }
 
 .title--catalog {
   @include tablet {
-    padding-left: 55px;
+    padding-left: 37px;
+    margin-bottom: 80px;
   }
 
   @include desktop {

@@ -1,0 +1,11 @@
+.form-name {
+  margin-bottom: 15px;
+
+  @include tablet {
+    margin-bottom: 41px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+  }
+}

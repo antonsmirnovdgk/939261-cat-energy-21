@@ -1,8 +1,21 @@
 .form-programm {
+  min-height: 157px;
+  margin-bottom: 21px;
   padding-top: 10px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
+  @include tablet {
+    margin-bottom: 77px;
+  }
+
+  @include desktop {
+    margin-bottom: 70px;
+  }
+
+  .label {
+    @include tablet {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -10,6 +23,17 @@
   @media (min-width: $tablet-width) {
     padding: 25px;
     border: 1px solid #e7e7e7;
+  }
+}
+
+.form-programm__item {
+  @include tablet {
+    padding-top: 17px;
+    margin-bottom: 8px;
+  }
+
+  @include desktop {
+    padding-top: 9px;
   }
 }
 

@@ -3,10 +3,16 @@
   cursor: pointer;
 
   & + label {
-    margin-left: 50px;
-    margin-bottom: 13px;
+    margin-left: 47px;
+    margin-bottom: 11px;
 
     @include tablet {
+      margin-left: 64px;
+      margin-bottom: 5px;
+    }
+
+    @include desktop {
+      margin-left: 57px;
       margin-bottom: 5px;
     }
   }
@@ -23,7 +29,13 @@
     cursor: pointer;
 
     @include tablet {
-      top: 0;
+      left: 7px;
+      top: 14px;
+    }
+
+    @include desktop {
+      left: -2px;
+      top: 4px;
     }
   }
 
@@ -36,5 +48,15 @@
     height: 30px;
     background-image: url("../img/svg/radio/radio-checked.svg");
     cursor: pointer;
+
+    @include tablet {
+      left: 7px;
+      top: 14px;
+    }
+
+    @include desktop {
+      left: -2px;
+      top: 4px;
+    }
   }
 }
