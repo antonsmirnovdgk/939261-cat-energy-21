@@ -23,6 +23,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  @include tablet {
+    min-height: 55px;
+  }
 }
 
 .page-header--img {
@@ -37,13 +41,14 @@
       top: 0;
       height: 694px;
       width: 50vw;
-      background: $gradient, url("../img/promo/catdesk.png");
+      background: $gradient, url("../img/promo/catdesk.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      background-color: $basic-green;
 
       @include retina() {
-        background: $gradient, url("../img/promo/catdesk-2x.png");
+        background: $gradient, url("../img/promo/catdesk-2x.jpg");
         background-size: cover;
       }
     }

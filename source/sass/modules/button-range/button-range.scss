@@ -21,7 +21,7 @@
   display: block;
   appearance: none;
   position: relative;
-  width: 84px;
+  width: 77px;
   height: 14px;
   background-color: $white;
   border-radius: 7px;
@@ -49,7 +49,7 @@
 
 .button-desk,
 .button-mob {
-  margin: 0 17px;
+  margin: 0 21px;
 
   @include tablet {
     margin: 0 25px;

@@ -1,5 +1,6 @@
 @import "visually-hidden/visually-hidden";
 @import "container/container";
+@import "page-main/page-main";
 @import "page-body/page-body";
 @import "page-header/page-header";
 @import "nav/nav";
@@ -14,7 +15,11 @@
 @import "list/list";
 @import "form/form";
 @import "form-title/form-title";
+@import "form-name/form-name";
 @import "form-programm/form-programm";
+@import "form-contact/form-contact";
+@import "form-comment/form-comment";
+@import "form-extra/form-extra.scss";
 @import "fieldset/fieldset";
 @import "label/label";
 @import "button/button";

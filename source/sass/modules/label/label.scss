@@ -6,6 +6,7 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  white-space: nowrap;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -29,7 +30,7 @@
     position: absolute;
     width: 20px;
     height: 14px;
-    background-image: url("../svg/form/icon_email.svg");
+    background-image: url("../img/svg/form/icon_email.svg");
   }
 }
 

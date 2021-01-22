@@ -1,6 +1,14 @@
 .extra {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   overflow: hidden;
+
+  @include tablet {
+    margin-bottom: 75px;
+  }
+
+  @include desktop {
+    margin-bottom: 12px;
+  }
 }
 
 .extra-container {
@@ -11,7 +19,7 @@
   }
 }
 
-.extra-wrapper {
+.extra__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: minmax(100px, 896px) minmax(100px, 245px);
@@ -40,7 +48,7 @@
 .extra__item {
   position: relative;
   min-height: 98px;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 18px;
   font-weight: normal;
   font-size: 14px;
@@ -52,6 +60,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    min-height: 134px;
     padding-top: 26px;
     padding-bottom: 28px;
     padding-left: 38px;
@@ -92,6 +101,7 @@
 
   @include tablet {
     width: 50%;
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -102,7 +112,7 @@
   }
 }
 
-.extra-gift {
+.extra__gift {
   display: flex;
   position: relative;
   width: 100%;
@@ -120,6 +130,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: $basic-green;
+
+    @include retina() {
+      background-image: url("../img/catalog/gift/gift-m@2x.png");
+    }
   }
 
   @include tablet {
@@ -145,10 +160,9 @@
     margin-left: auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     flex-direction: row;
-    max-width: 244px;
-    width: 100%;
+    min-width: 286px;
     margin-right: 38px;
     margin-bottom: 0;
   }
@@ -169,7 +183,7 @@
   justify-content: center;
   max-width: 161px;
   margin: auto;
-  padding-top: 126px;
+  padding-top: 148px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -187,8 +201,8 @@
     text-align: start;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 126px;
+  @include desktop {
+    padding-top: 145px;
     margin: auto;
     text-align: center;
   }
@@ -196,7 +210,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 55px;
+    top: 60px;
     width: 78px;
     height: 80px;
     background-image: url("../img/catalog/gift/icon_gift.png");
@@ -206,8 +220,9 @@
       left: 78px;
     }
 
-    @media (min-width: $desktop-width) {
-      left: 83px;
+    @include desktop {
+      top: 57px;
+      left: 85px;
     }
   }
 }

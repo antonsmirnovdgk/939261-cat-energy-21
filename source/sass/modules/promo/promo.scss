@@ -22,15 +22,16 @@
     z-index: -1;
     left: 0;
     top: 0;
-    height: 302px;
+    height: 300px;
     width: 100%;
-    background: $gradient, url("../img/promo/catmobile.png");
+    background: $gradient, url("../img/promo/catmobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: $basic-green;
 
     @include retina {
-      background: $gradient, url("../img/promo/catmobile-2x.png");
+      background: $gradient, url("../img/promo/catmobile-2x.jpg");
       background-size: cover;
     }
 
@@ -47,7 +48,7 @@
 
 .promo__title {
   position: relative;
-  padding-top: 27px;
+  padding-top: 24px;
   margin-bottom: 25px;
   font-style: normal;
   font-weight: normal;
@@ -58,19 +59,20 @@
     max-width: 414px;
     margin-bottom: 41px;
     margin-left: 87px;
-    padding-top: 62px;
+    padding-top: 58px;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
   }
 
   @include desktop {
-    padding-top: 111px;
+    margin-left: 80px;
+    padding-top: 106px;
   }
 }
 
 .promo__slogan {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -79,10 +81,15 @@
 
   @include tablet {
     margin-bottom: 49px;
-    margin-left: 87px;
+    margin-left: 88px;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+    margin-left: 80px;
   }
 }
 
@@ -102,17 +109,19 @@
   @include tablet {
     position: absolute;
     z-index: -1;
-    transform: translateX(-50%);
     left: 50%;
-    top: 270px;
+    top: 259px;
+    width: 709px;
+    height: 609px;
+    transform: translateX(-50%);
   }
 
   @include desktop {
     position: absolute;
-    top: 55px;
-    width: 552px;
-    height: 449px;
-    transform: translateX(-30%);
+    top: 23px;
+    width: 553px;
+    height: 498px;
+    transform: translateX(-162px);
   }
 }
 

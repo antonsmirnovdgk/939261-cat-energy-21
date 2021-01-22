@@ -10,7 +10,6 @@
 
   @include tablet {
     margin-bottom: 76px;
-    padding-left: 38px;
     font-size: 36px;
     line-height: 36px;
 
@@ -23,16 +22,7 @@
       height: 2px;
       right: 0;
       background-color: #68b738;
-
-      @media (min-width: $desktop-width) {
-        // margin-right: 40px;
-      }
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    // width: 100%;
-    padding-left: 0;
   }
 
   &::after {
@@ -51,11 +41,34 @@
   }
 }
 
+.title--extra {
+  margin-bottom: 36px;
+
+  @include tablet {
+    margin-bottom: 59px;
+  }
+}
+
 .title--contact {
   max-width: 187px;
 
   @include tablet {
     max-width: 100%;
+  }
+
+  @include desktop {
+    margin-bottom: 77px;
+  }
+}
+
+.title--catalog {
+  @include tablet {
+    padding-left: 37px;
+    margin-bottom: 80px;
+  }
+
+  @include desktop {
+    padding-left: 0;
   }
 }
 
@@ -78,6 +91,20 @@
   @include tablet {
     top: 18px;
     margin-left: 36px;
+  }
+}
+
+@include tablet {
+  .title--contact::before {
+    right: 568px;
+  }
+
+  .title--comment::before {
+    right: 236px;
+  }
+
+  .title--extra::before {
+    right: 267px;
   }
 }
 

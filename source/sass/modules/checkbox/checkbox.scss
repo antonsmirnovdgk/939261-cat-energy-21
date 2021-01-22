@@ -3,13 +3,11 @@
 
   & + label {
     margin-left: 49px;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 }
 
-.checkbox + label::before,
-.checkbox:checked + label::before,
-.checkbox:disabled + label::before {
+.checkbox + label::before {
   content: " ";
   position: absolute;
   top: -5px;
@@ -25,13 +23,8 @@
   }
 }
 
-.checkbox + label:hover::before {
-  background-image: url("../../svg/checkbox/checkbox-checked.svg");
-}
-
 .checkbox:checked + label::before {
-  border: 1px solid $grey;
-  background-image: url("../../svg/checkbox/checkbox-checked.svg");
+  background-image: url("../img/svg/checkbox/checkbox-checked.svg");
 }
 
 .checkbox:disabled + label::before {

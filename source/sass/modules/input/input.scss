@@ -1,12 +1,25 @@
 input[type="text"] {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
   width: 100%;
   padding: 13px 15px 13px 15px;
   margin-left: 14px;
   border: 1px solid #e7e7e7;
+  cursor: pointer;
 }
 
 input[type="text"]:focus {
   border-color: $special_dark-grey;
+
+  & + .form-contact__item-email,
+  & + .form-contact__item-phone {
+    stroke: $basic-green;
+  }
 }
 
 input[type="text"]:hover {
@@ -15,6 +28,11 @@ input[type="text"]:hover {
 
 input[type="text"]:invalid {
   border-color: $status_error;
+
+  & + .form-contact__item-email,
+  & + .form-contact__item-phone {
+    stroke: $status_error;
+  }
 }
 
 .input {

@@ -1,11 +1,18 @@
 .radio {
   appearance: none;
+  cursor: pointer;
 
   & + label {
-    margin-left: 60px;
-    margin-bottom: 13px;
+    margin-left: 47px;
+    margin-bottom: 11px;
 
     @include tablet {
+      margin-left: 64px;
+      margin-bottom: 5px;
+    }
+
+    @include desktop {
+      margin-left: 57px;
       margin-bottom: 5px;
     }
   }
@@ -18,16 +25,18 @@
     bottom: 5px;
     width: 30px;
     height: 30px;
-    background-image: url("../../svg/radio/radio.svg");
+    background-image: url("../img/svg/radio/radio.svg");
     cursor: pointer;
 
     @include tablet {
-      top: 0;
+      left: 7px;
+      top: 14px;
     }
-  }
 
-  & + label:hover::before {
-    background-image: url("../../svg/radio/radio-checked.svg");
+    @include desktop {
+      left: -2px;
+      top: 4px;
+    }
   }
 
   &:checked + label::before {
@@ -37,12 +46,17 @@
     bottom: 5px;
     width: 30px;
     height: 30px;
-    background-image: url("../../svg/radio/radio-checked.svg");
+    background-image: url("../img/svg/radio/radio-checked.svg");
+    cursor: pointer;
+
+    @include tablet {
+      left: 7px;
+      top: 14px;
+    }
+
+    @include desktop {
+      left: -2px;
+      top: 4px;
+    }
   }
 }
-
-// .radio + label::before {
-//   @include tablet {
-//     top: 0;
-//   }
-// }

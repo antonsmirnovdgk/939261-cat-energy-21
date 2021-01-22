@@ -3,16 +3,17 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 22px;
+  padding: 0;
+  // margin-bottom: 13px;
   border: none;
 
-  @include tablet {
-    margin-bottom: 72px;
-  }
+  // @include tablet {
+  //   margin-bottom: 72px;
+  // }
 
-  @include desktop {
-    margin-bottom: 69px;
-  }
+  // @include desktop {
+  //   margin-bottom: 60px;
+  // }
 
   &--desktop {
     @media (min-width: $desktop-width) {

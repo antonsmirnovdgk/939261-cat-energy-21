@@ -1,6 +1,6 @@
 .product {
   padding: 0 20px;
-  padding-top: 20px;
+  padding-top: 12px;
 
   @include tablet {
     padding: 0 36px;
@@ -15,15 +15,15 @@
 
 .product__header {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  margin-bottom: 13px;
+
   width: 140px;
   height: 112px;
 
   @include tablet {
-    width: 168px;
-    height: 200px;
+    width: 169px;
+    height: 205px;
     margin-bottom: 34px;
   }
 }
@@ -38,17 +38,16 @@
 .product__body {
   width: 50%;
   min-height: 112px;
-  margin-bottom: 13px;
 
   @include tablet {
     @include size(100%, 157px);
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 }
 
 .product__title {
   max-width: 76px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -58,7 +57,7 @@
   @include tablet {
     max-width: 145px;
     margin: auto;
-    margin-bottom: 18px;
+    margin-bottom: 26px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -89,11 +88,11 @@
   }
 
   @include tablet {
-    margin-bottom: 6px;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #cdcdcd;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 17px;
   }
 }
 
