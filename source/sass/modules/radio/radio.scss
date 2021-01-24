@@ -60,3 +60,7 @@
     }
   }
 }
+
+.radio:hover + label::before {
+  background-image: url("../img/svg/radio/radio-checked.svg");
+}

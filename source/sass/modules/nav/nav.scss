@@ -80,9 +80,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 475px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 518px;
     margin-left: auto;
   }
 }
@@ -93,10 +96,10 @@
   margin: 0 -20px;
   border-top: 1px solid #e6e6e6;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     min-height: 36px;
     margin: 0;
-    margin-right: 35px;
+    margin-left: 35px;
     border-top: 0;
 
     &:last-child {

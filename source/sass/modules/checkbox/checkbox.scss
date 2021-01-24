@@ -30,3 +30,7 @@
 .checkbox:disabled + label::before {
   opacity: 0.3;
 }
+
+.checkbox:hover + label::before {
+  background-image: url("../img/svg/checkbox/checkbox-checked.svg");
+}
