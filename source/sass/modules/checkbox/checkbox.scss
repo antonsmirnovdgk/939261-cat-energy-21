@@ -4,6 +4,7 @@
   & + label {
     margin-left: 49px;
     margin-bottom: 12px;
+    cursor: pointer;
   }
 }
 
@@ -24,11 +25,10 @@
 }
 
 .checkbox:checked + label::before {
-  border: 1px solid $hover_stroke;
+  border: 1px solid $grey;
 }
 
-.checkbox:checked + label::after,
-.checkbox:hover + label::after {
+.checkbox:checked + label::after {
   content: " ";
   position: absolute;
   top: 5px;

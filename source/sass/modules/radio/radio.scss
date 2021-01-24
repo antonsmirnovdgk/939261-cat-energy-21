@@ -5,6 +5,7 @@
   & + label {
     margin-left: 47px;
     margin-bottom: 11px;
+    cursor: pointer;
 
     @include tablet {
       margin-left: 64px;
@@ -47,7 +48,7 @@
     left: 0;
     width: 30px;
     height: 30px;
-    border: 1px solid #bababa;
+    border: 1px solid $grey;
     border-radius: 50%;
     cursor: pointer;
 
@@ -63,8 +64,7 @@
   }
 }
 
-.radio:checked + label::after,
-.radio:hover + label::after {
+.radio:checked + label::after {
   content: " ";
   position: absolute;
   top: 1px;
